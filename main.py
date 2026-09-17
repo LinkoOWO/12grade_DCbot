@@ -10,7 +10,7 @@ import json
 
 #variables definition area
 token="" #DC bot token
-test_mod = True
+test_mod = False
 
 #open info file
 with open("info.json", "r", encoding="utf-8") as f:
