@@ -65,7 +65,7 @@ async def on_ready():
 #start (run if the file is original and not imported)
 async def main():
     try:
-        token = os.environ["token"]
+        token = os.environ["TOKEN"]
     except KeyError:
         try:
             token = info["token"]
