@@ -10,6 +10,7 @@ import json
 
 #variables definition area
 token="" #DC bot token
+test_mod = True
 
 #open info file
 with open("info.json", "r", encoding="utf-8") as f:
@@ -37,8 +38,22 @@ class Bot(commands.Bot):
     #below is to load cogs files if existing
     async def setup_hook(self):
         await self.load_extension("cogs.database_cogs_123xyz")
+        await self.load_extension("cogs.manager_cogs")
+        await self.load_extension("cogs.general")
 
-        await self.tree.sync()
+        print("目前 Bot Tree 指令：")
+        for command in self.tree.get_commands():
+            print(f"  - {command.name}")
+
+        if test_mod:
+            guild = discord.Object(id=info["GUILD_ID"])
+            self.tree.copy_global_to(guild=guild)
+            synced = await self.tree.sync(guild=guild)
+            print(f"已同步 {len(synced)} 個指令至測試伺服器.")
+        else:
+            synced = await self.tree.sync()
+            print(f"已同步 {len(synced)} 個全域指令.")
+
         print("已同步指令至Discord伺服器.")
     
 bot = Bot()
@@ -50,18 +65,18 @@ async def on_ready():
 #start (run if the file is original and not imported)
 async def main():
     try:
-        token = os.environ.get("token")
+        token = os.environ["token"]
     except KeyError:
         try:
             token = info["token"]
         except KeyError:
             print("Error: 無法在控制台或info.json取得有效token.")
             return
-
-    await asyncio.gather(
-        run(),
-        Bot().start(token)
-    )
+    async with bot:
+        await asyncio.gather(
+            run(),
+            bot.start(token)
+        )
 
 if __name__ == "__main__":
     asyncio.run(main())
