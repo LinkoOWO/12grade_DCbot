@@ -47,15 +47,26 @@ class Bot(commands.Bot):
 
         if test_mod:
             guild = discord.Object(id=info["GUILD_ID"])
-            self.tree.copy_global_to(guild=guild)
-            synced = await self.tree.sync(guild=guild)
-            print(f"已同步 {len(synced)} 個指令至測試伺服器.")
+            try:
+                synced = await self.tree.sync(guild=guild)
+                print(f"已同步 {len(synced)} 個指令至測試伺服器.")
+            except discord.HTTPException as e:
+                print("========== Command Sync Error ==========")
+                print(e)
+                print(e.text)
+                print("========================================")
         else:
-            synced = await self.tree.sync()
-            print(f"已同步 {len(synced)} 個全域指令.")
+            try:
+                synced = await self.tree.sync()
+                print(f"已同步 {len(synced)} 個全域指令.")
+            except discord.HTTPException as e:
+                print("========== Command Sync Error ==========")
+                print(e)
+                print(e.text)
+                print("========================================")
 
-        print("已同步指令至Discord伺服器.")
-    
+                print("已同步指令至Discord伺服器.")
+        
 bot = Bot()
 
 @bot.event
