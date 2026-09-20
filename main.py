@@ -48,6 +48,7 @@ class Bot(commands.Bot):
         if test_mod:
             guild = discord.Object(id=info["GUILD_ID"])
             try:
+                self.tree.clear_commands(guild=guild)
                 synced = await self.tree.sync(guild=guild)
                 print(f"已同步 {len(synced)} 個指令至測試伺服器.")
             except discord.HTTPException as e:
