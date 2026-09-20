@@ -159,10 +159,11 @@ class DatabaseCog(commands.Cog):
                 for idx, pagenow in enumerate(page, start=1):
                     embed = discord.Embed(title=f"查詢結果 ({idx}/{total_pages})", color=0x3498db)
                     for entry in pagenow:
+                        print(entry)
                         if mode_mode == 1:
                             n_value = f"**ing-pt-pp**: {entry[8]}\n**特殊用法**: {entry[9]}\n**例句**: {entry[11]}"
                         elif mode_mode == 2:
-                            n_value = f"**中文**: {entry[8]}\n**字根字首字尾**: {entry[7]}\n**特殊用法中文**: {entry[10]}"
+                            n_value = f"**中文**: {entry[7]}\n**字根字首字尾**: {entry[6]}\n**特殊用法中文**: {entry[10]}"
                         else:
                             n_value = f"**字首**: {entry[3]}\n**字根**: {entry[4]}\n**字尾**: {entry[5]}\n**字根字首字尾**: {entry[6]}\n**中文**: {entry[7]}\n**ing-pt-pp**: {entry[8]}\n**特殊用法**: {entry[9]}\n**特殊用法的中文**: {entry[10]}\n**例句**: {entry[11]}"
                         embed.add_field(
