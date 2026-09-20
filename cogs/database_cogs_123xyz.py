@@ -198,19 +198,19 @@ class DatabaseCog(commands.Cog):
                     if not result:
                         await interaction.response.send_message("空的O.O")
                         return
-                    pages = [result[i:i + 10] for i in range(0, len(result), 10)]
+                    pages = [result[i:i + 5] for i in range(0, len(result), 5)]
                 elif mode == 2:
                     result = mode_actionChinese()
                     if not result:
                         await interaction.response.send_message("空的O.O")
                         return
-                    pages = [result[i:i + 10] for i in range(0, len(result), 10)]
+                    pages = [result[i:i + 5] for i in range(0, len(result), 5)]
                 elif mode == 3:
                     result = default_action()
                     if not result:
                         await interaction.response.send_message("空的O.O")
                         return
-                    pages = [result[i:i + 10] for i in range(0, len(result), 10)]
+                    pages = [result[i:i + 5] for i in range(0, len(result), 5)]
                 else:
                     await interaction.response.send_message("打錯東西啦(๑¯∀¯๑)，請輸入正確的模式(1:英文 2:中文 3:全部).")
                     return
