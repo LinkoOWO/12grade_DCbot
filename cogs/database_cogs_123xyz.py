@@ -129,14 +129,14 @@ class DatabaseCog(commands.Cog):
             # Remove the lasting " AND "
             condition = condition[:-5]
             def mode_actionEnglish():
-                movement1=f"SELECT {str(group1)} FROM [english data] WHERE {str(condition)};"
+                movement1=f"SELECT * FROM [english data] WHERE {str(condition)};"
                 print(movement1)
                 cursor.execute(movement1)
                 result1 = cursor.fetchall()
                 data.commit()
                 return result1
             def mode_actionChinese():
-                movement2=f"SELECT {str(group2)} FROM [english data] WHERE {str(condition)};"
+                movement2=f"SELECT * FROM [english data] WHERE {str(condition)};"
                 print(movement2)
                 cursor.execute(movement2)
                 result2 = cursor.fetchall()
@@ -150,16 +150,21 @@ class DatabaseCog(commands.Cog):
                 data.commit()
                 return result3
             def embed_creator(page, mode_mode):
+                movement = f"SELECT * FROM [english data];"
+                cursor.execute(movement)
+                result = cursor.fetchall()
+                data.commit()
+                
                 total_pages = len(page)
                 for idx, pagenow in enumerate(page, start=1):
                     embed = discord.Embed(title=f"查詢結果 ({idx}/{total_pages})", color=0x3498db)
                     for entry in pagenow:
                         if mode_mode == 1:
-                            n_value = f"**ing-pt-pp**: {entry[2]}\n**特殊用法**: {entry[3]}\n**例句**: {entry[4]}"
+                            n_value = f"**ing-pt-pp**: {entry[8]}\n**特殊用法**: {entry[9]}\n**例句**: {entry[11]}"
                         elif mode_mode == 2:
-                            n_value = f"**中文**: {entry[0]}\n**字根字首字尾**: {entry[1]}\n**特殊用法中文**: {entry[2]}"
+                            n_value = f"**中文**: {entry[8]}\n**字根字首字尾**: {entry[7]}\n**特殊用法中文**: {entry[10]}"
                         else:
-                            n_value = f"**字首**: {entry[3]}\n**字根**: {entry[4]}\n**字尾**: {entry[5]}\n**字根字首字尾(含中文)**: {entry[6]}\n**中文(含詞性)**: {entry[7]}\n**ing-pt-pp**: {entry[8]}\n**特殊用法**: {entry[9]}\n**特殊用法的中文**: {entry[10]}\n**例句**: {entry[11]}"
+                            n_value = f"**字首**: {entry[3]}\n**字根**: {entry[4]}\n**字尾**: {entry[5]}\n**字根字首字尾**: {entry[6]}\n**中文**: {entry[7]}\n**ing-pt-pp**: {entry[8]}\n**特殊用法**: {entry[9]}\n**特殊用法的中文**: {entry[10]}\n**例句**: {entry[11]}"
                         embed.add_field(
                             name=f"ID:{entry[0]} {entry[1]} L{entry[2]}",
                             value=n_value,
