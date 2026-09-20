@@ -9,8 +9,8 @@ import asyncio
 import os
 import sqlite3
 import pandas as pd
-import openpyxl
-import csv
+#import openpyxl
+#import csv
 
 #data tracking
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -110,8 +110,8 @@ class DatabaseCog(commands.Cog):
         def check(message):
             return message.author == interaction.user and not message.author.bot and message.channel == interaction.channel
 
-        group1="單字, [ing-pt-pp], 特殊用法, 例句"
-        group2="中文, 字根字首字尾, 特殊用法中文"
+        group1="ID, 單字, 等級, [ing-pt-pp], 特殊用法, 例句"
+        group2="ID, 單字, 等級, 中文, 字根字首字尾, 特殊用法中文"
         condition:str = ""
         if level != "0":
             condition += f"等級='L{level}' AND "
@@ -122,7 +122,10 @@ class DatabaseCog(commands.Cog):
         if suffix != "0":
             condition += f"字尾='{suffix}' AND "
 
-        if condition:
+        if not condition:
+            await interaction.response.send_message("倒是幫我買一套篩選器阿(`皿´)")
+            return
+        else:
             # Remove the lasting " AND "
             condition = condition[:-5]
             def mode_actionEnglish():
@@ -140,52 +143,57 @@ class DatabaseCog(commands.Cog):
                 data.commit()
                 return result2
             def default_action():
-                movement3=f"SELECT * FROM [english data] WHERE {str(condition)};"
+                movement3=f"SELECT * FROM [english data];"
                 print(movement3)
                 cursor.execute(movement3)
                 result3 = cursor.fetchall()
                 data.commit()
                 return result3
             def embed_creator(page, mode_mode):
-                if mode_mode == 1:
-                    n_value = f"**ID**: `{entry[0]}`\n**ing-pt-pp**: {entry[8]}\n**特殊用法**: {entry[9]}\n**例句**: {entry[11]}",
-                elif mode_mode == 2:
-                    n_value = f"**中文**: {entry[7]}\n**字根字首字尾**: {entry[6]}\n**特殊用法中文**: {entry[10]}",
-                else:
-                    n_value = f"**ID**: `{entry[0]}`\n**單字**: {entry[1]}\n**等級**: {entry[2]}\n**字首**: {entry[3]}\n**字根**: {entry[4]}\n**字尾**: {entry[5]}\n**字根字首字尾(含中文)**: {entry[6]}\n**中文(含詞性)**: {entry[7]}\n**ing-pt-pp**: {entry[8]}\n**特殊用法**: {entry[9]}\n**特殊用法的中文**: {entry[10]}\n**例句**: {entry[11]}",
-                
                 total_pages = len(page)
                 for idx, pagenow in enumerate(page, start=1):
                     embed = discord.Embed(title=f"查詢結果 ({idx}/{total_pages})", color=0x3498db)
                     for entry in pagenow:
+                        if mode_mode == 1:
+                            n_value = f"**ing-pt-pp**: {entry[2]}\n**特殊用法**: {entry[3]}\n**例句**: {entry[4]}"
+                        elif mode_mode == 2:
+                            n_value = f"**中文**: {entry[0]}\n**字根字首字尾**: {entry[1]}\n**特殊用法中文**: {entry[2]}"
+                        else:
+                            n_value = f"**字首**: {entry[3]}\n**字根**: {entry[4]}\n**字尾**: {entry[5]}\n**字根字首字尾(含中文)**: {entry[6]}\n**中文(含詞性)**: {entry[7]}\n**ing-pt-pp**: {entry[8]}\n**特殊用法**: {entry[9]}\n**特殊用法的中文**: {entry[10]}\n**例句**: {entry[11]}"
                         embed.add_field(
-                            name="L"+f"{entry[2]} {entry[1]}",
+                            name=f"ID:{entry[0]} {entry[1]} L{entry[2]}",
                             value=n_value,
                             inline=False
                         )
                 return embed
-            if mode == 1:
-                result = mode_actionEnglish()
-                if not result:
-                    await interaction.response.send_message("空的O.O", ephemeral=True)
-                    return
-                pages = [result[i:i + 10] for i in range(0, len(result), 10)]
-            elif mode == 2:
-                result = mode_actionChinese()
-                if not result:
-                    await interaction.response.send_message("空的O.O", ephemeral=True)
-                    return
-                pages = [result[i:i + 10] for i in range(0, len(result), 10)]
-            elif mode == 3:
-                result = default_action()
-                if not result:
-                    await interaction.response.send_message("空的O.O", ephemeral=True)
-                    return
-                pages = [result[i:i + 10] for i in range(0, len(result), 10)]
-            else:
-                await interaction.response.send_message("打錯東西啦(๑¯∀¯๑)，請輸入正確的模式(1:英文 2:中文 3:全部).", ephemeral=True)
-            output_embed = embed_creator(pages, mode)
-            await interaction.response.send_message(embed=output_embed, ephemeral=True)
+            try:
+                if mode == 1:
+                    result = mode_actionEnglish()
+                    if not result:
+                        await interaction.response.send_message("空的O.O", ephemeral=True)
+                        return
+                    pages = [result[i:i + 10] for i in range(0, len(result), 10)]
+                elif mode == 2:
+                    result = mode_actionChinese()
+                    if not result:
+                        await interaction.response.send_message("空的O.O", ephemeral=True)
+                        return
+                    pages = [result[i:i + 10] for i in range(0, len(result), 10)]
+                elif mode == 3:
+                    result = default_action()
+                    if not result:
+                        await interaction.response.send_message("空的O.O", ephemeral=True)
+                        return
+                    pages = [result[i:i + 10] for i in range(0, len(result), 10)]
+                else:
+                    await interaction.response.send_message("打錯東西啦(๑¯∀¯๑)，請輸入正確的模式(1:英文 2:中文 3:全部).", ephemeral=True)
+                output_embed = embed_creator(pages, mode)
+                await interaction.response.send_message(embed=output_embed, ephemeral=True)
+            except Exception as e:
+                print("search_vocab 發生錯誤：")
+                print(type(e).__name__, e)
+                if not interaction.response.is_done():
+                    await interaction.response.send_message(f"發生錯誤：`{type(e).__name__}: {e}`", ephemeral=True)
         return
 
     @app_commands.command(name="vocab_card", description="生成單字卡")
