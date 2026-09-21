@@ -51,16 +51,28 @@ class Bot(commands.Bot):
             print(f"\n[TEST MODE] Guild ID: {info['GUILD_ID']}")
             self.tree.clear_commands(guild=guild)
             self.tree.copy_global_to(guild=guild)
-            synced = await self.tree.sync(guild=guild)
-            print(f"[TEST MODE] 已同步 {len(synced)} 個 Guild Commands")
-            print("[TEST MODE] Guild Commands:")
+            try:
+                synced = await self.tree.sync(guild=guild)
+                print(f"[TEST MODE] 已同步 {len(synced)} 個 Guild Commands")
+                print("[TEST MODE] Guild Commands:")
+            except discord.HTTPException as e:
+                print("========== Command Sync Error ==========")
+                print(e)
+                print(e.text)
+                print("========================================")
+
             for command in synced:
                 print(f"  - {command.name}")
         else:
             print("\n[PRODUCTION MODE]")
-            synced = await self.tree.sync()
-            print(f"[PRODUCTION MODE] 已同步 {len(synced)} 個 Global Commands")
-            print("[PRODUCTION MODE] Global Commands:")
+            try:
+                synced = await self.tree.sync()
+                print(f"已同步 {len(synced)} 個全域指令.")
+            except discord.HTTPException as e:
+                print("========== Command Sync Error ==========")
+                print(e)
+                print(e.text)
+                print("========================================")
             for command in synced:
                 print(f"  - {command.name}")
         print("\nCommand Sync 完成.")
