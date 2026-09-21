@@ -37,15 +37,15 @@ class Bot(commands.Bot):
         super().__init__(command_prefix="/", intents=intents, application_id=info["applicationID"])
     #below is to load cogs files if existing
     async def setup_hook(self):
-
         await self.load_extension("cogs.database_cogs_123xyz")
         await self.load_extension("cogs.manager_cogs")
         await self.load_extension("cogs.general")
 
         print("\n目前 Bot Tree 指令：")
+
         for command in self.tree.get_commands():
             print(f"  - {command.name}")
-
+            
         if test_mod:
             guild = discord.Object(id=info["GUILD_ID"])
             print(f"\n[TEST MODE] Guild ID: {info['GUILD_ID']}")
@@ -53,29 +53,36 @@ class Bot(commands.Bot):
             self.tree.copy_global_to(guild=guild)
             try:
                 synced = await self.tree.sync(guild=guild)
-                print(f"[TEST MODE] 已同步 {len(synced)} 個 Guild Commands")
+                print(
+                    f"[TEST MODE] "
+                    f"已同步 {len(synced)} 個 Guild Commands"
+                )
                 print("[TEST MODE] Guild Commands:")
+                for command in synced:
+                    print(f"  - {command.name}")
             except discord.HTTPException as e:
                 print("========== Command Sync Error ==========")
-                print(e)
+                print(type(e).__name__, e)
                 print(e.text)
                 print("========================================")
-
-            for command in synced:
-                print(f"  - {command.name}")
         else:
             print("\n[PRODUCTION MODE]")
             try:
                 synced = await self.tree.sync()
-                print(f"已同步 {len(synced)} 個全域指令.")
+                print(
+                    f"[PRODUCTION MODE] "
+                    f"已同步 {len(synced)} 個全域指令."
+                    )
+                print("[PRODUCTION MODE] Global Commands:")
+                for command in synced:
+                    print(f"  - {command.name}")
             except discord.HTTPException as e:
                 print("========== Command Sync Error ==========")
-                print(e)
+                print(type(e).__name__, e)
                 print(e.text)
                 print("========================================")
-            for command in synced:
-                print(f"  - {command.name}")
-        print("\nCommand Sync 完成.")
+
+    print("\nCommand Sync 完成.")
         
 bot = Bot()
 
