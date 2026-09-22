@@ -40,6 +40,7 @@ class Bot(commands.Bot):
         await self.load_extension("cogs.database_cogs_123xyz")
         await self.load_extension("cogs.manager_cogs")
         await self.load_extension("cogs.general")
+        await self.load_extension("cogs.engagement")
 
         print("\n目前 Bot Tree 指令：")
 
