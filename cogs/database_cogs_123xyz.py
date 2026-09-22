@@ -134,7 +134,7 @@ class DatabaseCog(commands.Cog):
             for item in self.children:
                 item.disabled = True
 
-    @app_commands.command(name="search_vocab", description="查看特定類型資料. 查看[英文/全部/中文解釋]單字資料庫請在mode中打上[1/2/3].")
+    @app_commands.command(name="search_vocab_list", description="查看特定類型資料. 查看[英文/全部/中文解釋]單字資料庫請在mode中打上[1/2/3].")
     async def check_and_show(self, interaction: discord.Interaction, level: str = "0", prefix: str = "0", root: str = "0", suffix: str = "0", mode: int = 3):
         condition:str = ""
         if level != "0":
@@ -227,9 +227,29 @@ class DatabaseCog(commands.Cog):
                     await interaction.response.send_message(f"發生錯誤：`{type(e).__name__}: {e}`")
         return
 
+    @app_commands.command(name="search_one_vocab", description="尋找單一單字資料")
+    async def check_one(self, interaction: discord.Interaction, word: str):
+        cursor.execute(f"SELECT * FROM [english data] WHERE 單字 = '{word}';")
+        result = cursor.fetchall()
+        data.commit
+        embed = discord.Embed(
+            title=f"查詢結果",
+            color=0x3498db
+            )
+        try:
+            embed.add_field(
+                name=f"ID:{result[0]} {result[1]} {result[2]}",
+                value=f"**字首**: {result[3]}\n**字根**: {result[4]}\n**字尾**: {result[5]}\n**字根字首字尾**: {result[6]}\n**中文**: {result[7]}\n**ing-pt-pp**: {result[8]}\n**特殊用法**: {result[9]}\n**特殊用法的中文**: {result[10]}\n**例句**: {result[11]}",
+                inline=False
+                )
+            await interaction.response.send_message(embed=embed,)
+            return
+        except Exception as e:
+            await interaction.response.send_message(f"出錯啦(╥﹏╥): {e}")
+
     @app_commands.command(name="vocab_card", description="生成單字卡")
     async def generate_flashcards(self, interaction: discord.Interaction, level: str = "0", prefix: str = "0", root: str = "0", suffix: str = "0"):
-        pass
+        return
     
 async def setup(bot):
     await bot.add_cog(DatabaseCog(bot))
