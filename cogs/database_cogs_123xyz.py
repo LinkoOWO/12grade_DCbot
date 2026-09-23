@@ -232,6 +232,7 @@ class DatabaseCog(commands.Cog):
         cursor.execute(f"SELECT * FROM [english data] WHERE 單字 = '{word}';")
         result = cursor.fetchall()
         data.commit
+        print(result)
         embed = discord.Embed(
             title=f"查詢結果",
             color=0x3498db
