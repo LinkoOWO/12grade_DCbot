@@ -233,14 +233,17 @@ class DatabaseCog(commands.Cog):
         result = cursor.fetchall()
         data.commit
         print(result)
+        print(len(result))
         embed = discord.Embed(
             title=f"查詢結果",
             color=0x3498db
             )
+        if not result:
+            await interaction.response.send_message("空的O.O")
         try:
             embed.add_field(
-                name=f"ID:{result[0]} {result[1]} {result[2]}",
-                value=f"**字首**: {result[3]}\n**字根**: {result[4]}\n**字尾**: {result[5]}\n**字根字首字尾**: {result[6]}\n**中文**: {result[7]}\n**ing-pt-pp**: {result[8]}\n**特殊用法**: {result[9]}\n**特殊用法的中文**: {result[10]}\n**例句**: {result[11]}",
+                name=f"ID:{result[0][0]} {result[0][1]} {result[0][2]}",
+                value=f"**字首**: {result[0][3]}\n**字根**: {result[0][4]}\n**字尾**: {result[0][5]}\n**字根字首字尾**: {result[0][6]}\n**中文**: {result[0][7]}\n**ing-pt-pp**: {result[0][8]}\n**特殊用法**: {result[0][9]}\n**特殊用法的中文**: {result[0][10]}\n**例句**: {result[0][11]}",
                 inline=False
                 )
             await interaction.response.send_message(embed=embed,)

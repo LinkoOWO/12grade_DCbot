@@ -12,8 +12,15 @@ class Engagement(commands.Cog):
         self.bot = bot
 
     @app_commands.command(name="random_number", description="範圍內隨機取整數")
-    async def random_number(self, interaction: discord.Interaction, max: int, min: int):
-        return
+    async def random_number(self, interaction: discord.Interaction, minimum: int, maximum: int, amount: int = 1):
+        try:
+            sample = random.sample(range(minimum, maximum + 1), amount)
+            sample.sort(reverse=True)
+            response_n += " ".join(map(str, sample))
+            print(response_n)
+            await interaction.response.send_message(f"抽完啦(๑>◡<๑) 抽到了{response_n}")
+        except Exception as e:
+            await interaction.response.send_message(f"出錯啦(╥﹏╥): {e}")
 
     @app_commands.command(name="guess_dice", description="骰子比大小")
     async def random_dice(self, interaction: discord.Interaction, guess: str):
