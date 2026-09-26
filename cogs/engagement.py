@@ -14,6 +14,7 @@ class Engagement(commands.Cog):
     @app_commands.command(name="random_number", description="範圍內隨機取整數")
     async def random_number(self, interaction: discord.Interaction, minimum: int, maximum: int, amount: int = 1):
         try:
+            response_n = ""
             sample = random.sample(range(minimum, maximum + 1), amount)
             sample.sort(reverse=True)
             response_n += " ".join(map(str, sample))
