@@ -17,8 +17,10 @@ import json
 current_dir = os.path.dirname(os.path.abspath(__file__))
 db_path = os.path.join(current_dir, "english_data.db")
 
+'''
 with open("cogs\\ancient_chinese.json", "r", encoding="utf-8") as f:
     c_data = json.load(f)
+'''
 
 #construction of database
 data = sqlite3.connect(db_path)
