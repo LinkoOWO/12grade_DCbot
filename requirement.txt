@@ -2,3 +2,11 @@ discord
 quart
 pandas
 openpyxl
+google
+genai
+google-cloud-storage
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+google-genai
+protobuf
