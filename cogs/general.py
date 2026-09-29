@@ -17,14 +17,14 @@ class General(commands.Cog):
         channel_id = 1452541683207114826
         channel = member.guild.get_channel(channel_id)
         if channel:
-            await channel.send(f"歡迎 {member.mention} 加入伺服器！")
+            await channel.send(f"嘿嘿( ˶ˆ꒳ˆ˵ ) 歡迎 {member.mention} 加入伺服器！")
 
     @commands.Cog.listener()
     async def on_member_remove(self, member: discord.Member):
         channel_id = 1452541683207114826
         channel = member.guild.get_channel(channel_id)
         if channel:
-            await channel.send(f"歡迎 {member.mention} 加入伺服器！")
+            await channel.send(f"(╥﹏╥) {member.mention} 離開了伺服器")
 
 async def setup(bot):
     await bot.add_cog(General(bot))
