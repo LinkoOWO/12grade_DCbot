@@ -12,5 +12,19 @@ class General(commands.Cog):
     async def ping(self, interaction: discord.Interaction):
         await interaction.response.send_message(f"啊啊啊會痛的啦(╥﹏╥). 你要的時差是{round(self.bot.latency * 1000)}ms啦")
 
+    @commands.Cog.listener()
+    async def on_member_join(self, member: discord.Member):
+        channel_id = 1452541683207114826
+        channel = member.guild.get_channel(channel_id)
+        if channel:
+            await channel.send(f"歡迎 {member.mention} 加入伺服器！")
+
+    @commands.Cog.listener()
+    async def on_member_remove(self, member: discord.Member):
+        channel_id = 1452541683207114826
+        channel = member.guild.get_channel(channel_id)
+        if channel:
+            await channel.send(f"歡迎 {member.mention} 加入伺服器！")
+
 async def setup(bot):
     await bot.add_cog(General(bot))
