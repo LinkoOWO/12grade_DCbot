@@ -9,12 +9,16 @@ import asyncio
 import os
 import sqlite3
 import pandas as pd
+import json
 #import openpyxl
 #import csv
 
 #data tracking
 current_dir = os.path.dirname(os.path.abspath(__file__))
 db_path = os.path.join(current_dir, "english_data.db")
+
+with open("cogs\\ancient_chinese.json", "r", encoding="utf-8") as f:
+    c_data = json.load(f)
 
 #construction of database
 data = sqlite3.connect(db_path)
@@ -251,9 +255,35 @@ class DatabaseCog(commands.Cog):
         except Exception as e:
             await interaction.response.send_message(f"出錯啦(╥﹏╥): {e}")
 
+    @app_commands.command(name="data_pieces", description="確認最高id")
+    async def check_index(self, interaction: discord.Interaction):
+        cursor.execute("SELECT MAX(id) FROM [english data]")
+        result = cursor.fetchone()
+        data.commit
+        await interaction.response.send_message(f"我超富有的好嘛.3. 有{result[0][0]}塊錢呢")
+
+
     @app_commands.command(name="vocab_card", description="生成單字卡")
     async def generate_flashcards(self, interaction: discord.Interaction, level: str = "0", prefix: str = "0", root: str = "0", suffix: str = "0"):
-        return
+        condition:str = ""
+        if level != "0":
+            condition += f"等級='L{level}' AND "
+        if prefix != "0":
+            condition += f"字首='{prefix}' AND "
+        if root != "0":
+            condition += f"字根='{root}' AND "
+        if suffix != "0":
+            condition += f"字尾='{suffix}' AND "
+
+        if not condition:
+            await interaction.response.send_message("倒是幫我買一套篩選器阿(`皿´)")
+            return
+        if condition:
+            # Remove the lasting " AND "
+            condition = condition[:-5]
+            cursor.execute(f"SELECT * FROM [english data] WHERE {condition};")
+            result = cursor.fetchall()
+            data.commit
     
 async def setup(bot):
     await bot.add_cog(DatabaseCog(bot))
