@@ -51,64 +51,81 @@ class DatabaseCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @app_commands.command(name="add_vocab", description="替資料庫新增單字.")
-    async def write(self, interaction: discord.Interaction, file: discord.Attachment = None):
-        #check whether the message is from the user who is using the command.
+    @app_commands.command(name="add_vocab",description="替資料庫新增單字.")
+    async def write(self,interaction: discord.Interaction,file: discord.Attachment | None = None):
+
         def check(message):
-            return message.author == interaction.user and not message.author.bot and message.channel == interaction.channel
-        #await interaction.response.send_message("請輸入操作的類型(1:檔案 2:單字):")
-        #mode = int(await self.bot.wait_for("message", check=check, timeout=60.0))
+            return (message.author == interaction.user and not message.author.bot and message.channel == interaction.channel)
+
         if file is not None:
-            file_extension = os.path.splitext(file.filename)[1]
-            if file_extension == ".xlsx":
-                #AI generated
-                file_path = os.path.join(current_dir, file.filename)
+            file_extension = os.path.splitext(file.filename)[1].lower()
+            file_path = os.path.join(current_dir, os.path.basename(file.filename))
+            try:
                 await file.save(file_path)
-                enter_file = pd.read_excel(file_path)
-                print(enter_file.columns)
-                enter_file.to_sql(
-                    name='english data',
-                    con=data,
-                    if_exists="append",
-                    index=False
-                )
-                await interaction.response.send_message("收件完畢( ˶ˆ꒳ˆ˵ ).")
-            elif file_extension == ".csv":
-                #AI generated
-                file_path = os.path.join(current_dir, file.filename)
-                await file.save(file_path)
-                enter_file = pd.read_csv(file_path)
-                print(enter_file.columns)
-                enter_file.to_sql(
-                    name='english data',
-                    con=data,
-                    if_exists="append",
-                    index=False
-                )
-                await interaction.response.send_message("收件完畢( ˶ˆ꒳ˆ˵ ).")
-            else:
-                await interaction.response.send_message(
-                    """
-                請輸入單字架構
-                架構:單字~等級~字首~字根~字尾~字根字首字尾(含中文)~中文(含詞性)~ing-pt-pp~特殊用法~特殊用法的中文~例句`該欄位如果沒有資料請填入0
-                """,
-                    ephemeral=True,
-                )
-                response_message = await self.bot.wait_for("message", check=check, timeout=60.0)
-                if response_message == "0":
-                    await interaction.response.send_message("呀? 沒事的話我要去玩啦(๑>◡<๑) byebye~")
-                    return
+                if file_extension == ".xlsx":
+                    enter_file = pd.read_excel(file_path)
+                elif file_extension == ".csv":
+                    enter_file = pd.read_csv(file_path)
                 else:
-                    try:
-                        word_list=[]
-                        word_list=response_message.split("~")
-                        word_tuple=tuple(word_list)
-                        insert_movement="INSERT INTO [english data] (單字,字首,字根,字尾,字根字首字尾(含中文),中文(含詞性),ing-pt-pp,特殊用法,特殊用法的中文,例句) VALUES(?,?,?,?,?,?,?,?,?,?)"
-                        cursor.execute(insert_movement,word_tuple) 
-                        data.commit()
-                    except Exception as e:
-                        await interaction.response.send_message(f"出錯啦(╥﹏╥): {e}")
-                        return
+                    await interaction.response.send_message("不支援的檔案格式，請上傳 `.xlsx` 或 `.csv`。",ephemeral=True)
+                    return
+                print(enter_file.columns)
+                enter_file.to_sql(name="english data",con=data,if_exists="append",index=False)
+                await interaction.response.send_message("收件完畢( ˶ˆ꒳ˆ˵ ).")
+            except Exception as e:
+                await interaction.response.send_message(f"出錯啦(╥﹏╥): {e}",ephemeral=True)
+            return
+        await interaction.response.send_message(
+            """
+    請輸入單字架構：
+
+    單字~等級~字首~字根~字尾~字根字首字尾~中文~ing-pt-pp~特殊用法~特殊用法中文~例句
+
+    該欄位如果沒有資料請填入 0。
+
+    輸入 0 可以取消。
+    """,ephemeral=True)
+        try:
+            response_message = await self.bot.wait_for("message",check=check,timeout=60.0)
+        except asyncio.TimeoutError:
+            await interaction.followup.send("超過60秒不回我(￣へ￣) byebye~",ephemeral=True)
+            return
+        response = response_message.content.strip()
+        if response == "0":
+            await interaction.followup.send("呀? 沒事的話我要去玩啦(๑>◡<๑) byebye~")
+            return
+        try:
+            word_list = response.split("~")
+            if len(word_list) != 11:
+                await interaction.followup.send(f"格式錯誤！\n"f"目前有 {len(word_list)} 個欄位，"f"應該要有 11 個欄位。",ephemeral=True)
+                return
+            
+            word_tuple = tuple(word_list)
+
+            insert_movement = """
+                INSERT INTO [english data]
+                (
+                    單字,
+                    等級,
+                    字首,
+                    字根,
+                    字尾,
+                    字根字首字尾,
+                    中文,
+                    [ing-pt-pp],
+                    特殊用法,
+                    特殊用法中文,
+                    例句
+                )
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """
+
+            cursor.execute(insert_movement,word_tuple)
+            data.commit()
+            await interaction.followup.send("新增成功( ˶ˆ꒳ˆ˵ )！")
+        except Exception as e:
+            await interaction.followup.send(f"出錯啦(╥﹏╥): {e}",ephemeral=True)
+
     class PageView(discord.ui.View):
         def __init__(self,pages,current_page,total_pages,mode,embed_creator):
             super().__init__(timeout=60)
@@ -261,12 +278,11 @@ class DatabaseCog(commands.Cog):
     async def check_index(self, interaction: discord.Interaction):
         cursor.execute("SELECT MAX(id) FROM [english data]")
         result = cursor.fetchone()
-        data.commit
-        await interaction.response.send_message(f"我超富有的好嘛.3. 有{result[0][0]}塊錢呢")
-
+        await interaction.response.send_message(f"我超富有的好嘛.3. 有{result[0]}塊錢呢")
+        print(f"目前資料庫最高id為: {result[0]}")
 
     @app_commands.command(name="vocab_card", description="生成單字卡")
-    async def generate_flashcards(self, interaction: discord.Interaction, level: str = "0", prefix: str = "0", root: str = "0", suffix: str = "0"):
+    async def generate_flashcards(self, interaction: discord.Interaction, id: int, level: str = "0", prefix: str = "0", root: str = "0", suffix: str = "0"):
         condition:str = ""
         if level != "0":
             condition += f"等級='L{level}' AND "
