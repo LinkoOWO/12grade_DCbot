@@ -3,6 +3,7 @@ import discord
 from discord.ext import commands
 from discord import app_commands
 from discord import Embed
+from discord.app_commands import Choice
 import asyncio
 
 #import area for main defnitions
@@ -47,6 +48,11 @@ data.commit()
 
 #functions
 #bot setting
+def is_admin():
+    async def predicate(interaction: discord.Interaction):
+        return interaction.user.guild_permissions.administrator
+    return app_commands.check(predicate)
+
 class DatabaseCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
@@ -157,101 +163,129 @@ class DatabaseCog(commands.Cog):
             for item in self.children:
                 item.disabled = True
 
-    @app_commands.command(name="search_vocab_list", description="查看特定類型資料. 查看[英文/全部/中文解釋]單字資料庫請在mode中打上[1/2/3].")
-    async def check_and_show(self, interaction: discord.Interaction, level: str = "0", prefix: str = "0", root: str = "0", suffix: str = "0", mode: int = 3):
-        condition:str = ""
-        if level != "0":
-            condition += f"等級='L{level}' AND "
+
+    @app_commands.command(name="search_vocab_list",description="查看特定類型資料。查看[英文/全部/中文解釋]單字資料庫請在mode中選擇。")
+    @app_commands.choices(
+        mode=[
+            Choice(name="英文", value=1),
+            Choice(name="中文", value=2),
+            Choice(name="全部", value=3)
+        ],
+        level=[
+            Choice(name="不限", value="0"),
+            Choice(name="L1", value="1"),
+            Choice(name="L2", value="2"),
+            Choice(name="L3", value="3"),
+            Choice(name="L4", value="4"),
+            Choice(name="L5", value="5"),
+            Choice(name="L6", value="6"),
+            Choice(name="其他", value="7")
+        ]
+    )
+    async def check_and_show(
+        self, interaction: discord.Interaction, level: Choice[str] = None, prefix: str = "0", root: str = "0", suffix: str = "0", mode: Choice[int] = None):
+
+        level_value = level.value if level else "0"
+        mode_value = mode.value if mode else 3
+
+        condition = ""
+        if level_value != "0":
+            condition += f"等級='L{level_value}' AND "
         if prefix != "0":
             condition += f"字首='{prefix}' AND "
         if root != "0":
             condition += f"字根='{root}' AND "
         if suffix != "0":
             condition += f"字尾='{suffix}' AND "
-
-        if not condition and mode != 3:
-            await interaction.response.send_message("倒是幫我買一套篩選器阿(`皿´)")
+        if not condition and mode_value != 3:
+            await interaction.response.send_message(
+                "倒是幫我買一套篩選器阿(`皿´)"
+            )
             return
-        if condition:
-            # Remove the lasting " AND "
-            condition = condition[:-5]
-            def mode_actionEnglish():
-                movement1=f"SELECT * FROM [english data] WHERE {str(condition)};"
-                print(movement1)
-                cursor.execute(movement1)
-                result1 = cursor.fetchall()
-                data.commit()
-                return result1
-            def mode_actionChinese():
-                movement2=f"SELECT * FROM [english data] WHERE {str(condition)};"
-                print(movement2)
-                cursor.execute(movement2)
-                result2 = cursor.fetchall()
-                data.commit()
-                return result2
-            def default_action():
-                movement3=f"SELECT * FROM [english data] WHERE {str(condition)};"
-                print(movement3)
-                cursor.execute(movement3)
-                result3 = cursor.fetchall()
-                data.commit()
-                return result3
-            def embed_creator(pages, current_page, total_pages, mode_mode):
-                pagenow = pages[current_page - 1]
-                embed = discord.Embed(
-                    title=f"查詢結果 ({current_page}/{total_pages})",
-                    color=0x3498db
-                    )
-                for entry in pagenow:
-                    if mode_mode == 1:
-                        n_value = f"**ing-pt-pp**: {entry[8]}\n**特殊用法**: {entry[9]}\n**例句**: {entry[11]}"
-                    elif mode_mode == 2:
-                        n_value = f"**中文**: {entry[7]}\n**字根字首字尾**: {entry[6]}\n**特殊用法中文**: {entry[10]}"
-                    else:
-                        n_value = f"**字首**: {entry[3]}\n**字根**: {entry[4]}\n**字尾**: {entry[5]}\n**字根字首字尾**: {entry[6]}\n**中文**: {entry[7]}\n**ing-pt-pp**: {entry[8]}\n**特殊用法**: {entry[9]}\n**特殊用法的中文**: {entry[10]}\n**例句**: {entry[11]}"
-                    embed.add_field(
-                        name=f"ID:{entry[0]} {entry[1]} {entry[2]}",
-                        value=n_value,
-                        inline=False
-                        )
-                return embed
-            try:
-                if mode == 1:
-                    result = mode_actionEnglish()
-                    if not result:
-                        await interaction.response.send_message("空的O.O")
-                        return
-                    pages = [result[i:i + 5] for i in range(0, len(result), 5)]
-                elif mode == 2:
-                    result = mode_actionChinese()
-                    if not result:
-                        await interaction.response.send_message("空的O.O")
-                        return
-                    pages = [result[i:i + 5] for i in range(0, len(result), 5)]
-                elif mode == 3:
-                    result = default_action()
-                    if not result:
-                        await interaction.response.send_message("空的O.O")
-                        return
-                    pages = [result[i:i + 5] for i in range(0, len(result), 5)]
-                else:
-                    await interaction.response.send_message("打錯東西啦(๑¯∀¯๑)，請輸入正確的模式(1:英文 2:中文 3:全部).")
-                    return
-                total_pages = len(pages)
-                current_page = 1
-                output_embed = embed_creator(pages, current_page, total_pages, mode)
-                view = self.PageView(pages, current_page, total_pages, mode, embed_creator)
 
-                await interaction.response.send_message(embed=output_embed,view=view,)
-            except Exception as e:
-                print("search_vocab 發生錯誤：")
-                print(type(e).__name__, e)
-                if not interaction.response.is_done():
-                    await interaction.response.send_message(f"發生錯誤：`{type(e).__name__}: {e}`")
-        return
+        if condition:
+            condition = condition[:-5]
+
+        def database_action():
+            if condition:
+                sql = f"SELECT * FROM [english data] WHERE {condition};"
+            else:
+                sql = "SELECT * FROM [english data];"
+            print(sql)
+            cursor.execute(sql)
+            result = cursor.fetchall()
+            return result
+
+        def embed_creator(pages, current_page, total_pages, mode_mode):
+            pagenow = pages[current_page - 1]
+            embed = discord.Embed(title=f"查詢結果 ({current_page}/{total_pages})", color=0x3498db)
+
+            for entry in pagenow:
+                if mode_mode == 1:
+                    n_value = (f"**ing-pt-pp**: {entry[8]}\n"f"**特殊用法**: {entry[9]}\n"f"**例句**: {entry[11]}")
+                elif mode_mode == 2:
+                    n_value = (f"**中文**: {entry[7]}\n"f"**字根字首字尾**: {entry[6]}\n"f"**特殊用法中文**: {entry[10]}")
+                else:
+                    n_value = (
+                        f"**字首**: {entry[3]}\n"
+                        f"**字根**: {entry[4]}\n"
+                        f"**字尾**: {entry[5]}\n"
+                        f"**字根字首字尾**: {entry[6]}\n"
+                        f"**中文**: {entry[7]}\n"
+                        f"**ing-pt-pp**: {entry[8]}\n"
+                        f"**特殊用法**: {entry[9]}\n"
+                        f"**特殊用法的中文**: {entry[10]}\n"
+                        f"**例句**: {entry[11]}"
+                        )
+                embed.add_field(
+                    name=f"ID:{entry[0]} {entry[1]} {entry[2]}",
+                    value=n_value,
+                    inline=False
+                )
+            return embed
+        try:
+            result = database_action()
+            if not result:
+                await interaction.response.send_message("空的O.O")
+                return
+            
+            pages = [
+                result[i:i + 5]
+                for i in range(0, len(result), 5)
+            ]
+            total_pages = len(pages)
+            current_page = 1
+            output_embed = embed_creator(
+                pages,
+                current_page,
+                total_pages,
+                mode_value
+            )
+            view = self.PageView(
+                pages,
+                current_page,
+                total_pages,
+                mode_value,
+                embed_creator
+            )
+            await interaction.response.send_message(
+                embed=output_embed,
+                view=view
+            )
+
+        except Exception as e:
+
+            print("search_vocab_list 發生錯誤：")
+            print(type(e).__name__, e)
+
+            if not interaction.response.is_done():
+                await interaction.response.send_message(
+                    f"發生錯誤：`{type(e).__name__}: {e}`"
+                )
 
     @app_commands.command(name="search_one_vocab", description="尋找單一單字資料")
     async def check_one(self, interaction: discord.Interaction, word: str):
+        word = word.lower()
         cursor.execute(f"SELECT * FROM [english data] WHERE 單字 = '{word}';")
         result = cursor.fetchall()
         data.commit
@@ -281,6 +315,36 @@ class DatabaseCog(commands.Cog):
         await interaction.response.send_message(f"我超富有的好嘛.3. 有{result[0]}塊錢呢")
         print(f"目前資料庫最高id為: {result[0]}")
 
+    @app_commands.command(name="delete_vocab", description="刪除單字資料")
+    @is_admin()
+    async def delete_vocab(self, interaction: discord.Interaction, id: int):
+        cursor.execute(f"DELETE FROM [english data] WHERE id = {id};")
+        data.commit()
+        await interaction.response.send_message(f"已刪除ID為{id}的單字資料。")
+
+    @app_commands.command(name="update_vocab", description="更新單字資料")
+    @is_admin()
+    @app_commands.choices(
+        field=[
+            Choice(name="單字", value="單字"),
+            Choice(name="等級", value="等級"),
+            Choice(name="字首", value="字首"),
+            Choice(name="字根", value="字根"),
+            Choice(name="字尾", value="字尾"),
+            Choice(name="字根字首字尾", value="字根字首字尾"),
+            Choice(name="中文", value="中文"),
+            Choice(name="ing-pt-pp", value="ing-pt-pp"),
+            Choice(name="特殊用法", value="特殊用法"),
+            Choice(name="特殊用法中文", value="特殊用法中文"),
+            Choice(name="例句", value="例句")
+        ]
+    )
+    async def update_vocab(self, interaction: discord.Interaction, id: int, field: Choice[str], new_value: str):
+        field = field.value
+        cursor.execute(f"UPDATE [english data] SET {field} = ? WHERE id = ?", (new_value, id))
+        data.commit()
+        await interaction.response.send_message(f"已更新ID為{id}的單字資料，欄位{field}已更改為{new_value}。")
+
     @app_commands.command(name="vocab_card", description="生成單字卡")
     async def generate_flashcards(self, interaction: discord.Interaction, id: int, level: str = "0", prefix: str = "0", root: str = "0", suffix: str = "0"):
         condition:str = ""
@@ -301,7 +365,7 @@ class DatabaseCog(commands.Cog):
             condition = condition[:-5]
             cursor.execute(f"SELECT * FROM [english data] WHERE {condition};")
             result = cursor.fetchall()
-            data.commit
+            data.commit()
     
 async def setup(bot):
     await bot.add_cog(DatabaseCog(bot))
