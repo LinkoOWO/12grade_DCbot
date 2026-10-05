@@ -285,7 +285,7 @@ class DatabaseCog(commands.Cog):
 
     @app_commands.command(name="search_one_vocab", description="尋找單一單字資料")
     async def check_one(self, interaction: discord.Interaction, word: str):
-        word = word.lower()
+#       word = word.lower()
         cursor.execute(f"SELECT * FROM [english data] WHERE 單字 = '{word}';")
         result = cursor.fetchall()
         data.commit
@@ -323,7 +323,7 @@ class DatabaseCog(commands.Cog):
         await interaction.response.send_message(f"已刪除ID為{id}的單字資料。")
 
     @app_commands.command(name="update_vocab", description="更新單字資料")
-    @is_admin()
+#   @is_admin()
     @app_commands.choices(
         field=[
             Choice(name="單字", value="單字"),
@@ -345,27 +345,132 @@ class DatabaseCog(commands.Cog):
         data.commit()
         await interaction.response.send_message(f"已更新ID為{id}的單字資料，欄位{field}已更改為{new_value}。")
 
-    @app_commands.command(name="vocab_card", description="生成單字卡")
-    async def generate_flashcards(self, interaction: discord.Interaction, id: int, level: str = "0", prefix: str = "0", root: str = "0", suffix: str = "0"):
-        condition:str = ""
-        if level != "0":
-            condition += f"等級='L{level}' AND "
+    @app_commands.command(name="vocab_card", description="查看特定類型資料。查看[英文/全部/中文解釋]單字資料庫請在mode中選擇。")
+    @app_commands.choices(
+        level=[
+            Choice(name="不限", value="0"),
+            Choice(name="L1", value="1"),
+            Choice(name="L2", value="2"),
+            Choice(name="L3", value="3"),
+            Choice(name="L4", value="4"),
+            Choice(name="L5", value="5"),
+            Choice(name="L6", value="6"),
+            Choice(name="其他", value="7")
+        ]
+    )
+    async def vocab_card(self, interaction: discord.Interaction, level: Choice[str] = None, prefix: str = "0", root: str = "0", suffix: str = "0", start_page: int = 1):
+        level_value = level.value if level else "0"
+        condition = ""
+
+        if level_value != "0":
+            condition += f"等級='L{level_value}' AND "
         if prefix != "0":
             condition += f"字首='{prefix}' AND "
         if root != "0":
             condition += f"字根='{root}' AND "
         if suffix != "0":
             condition += f"字尾='{suffix}' AND "
-
         if not condition:
             await interaction.response.send_message("倒是幫我買一套篩選器阿(`皿´)")
             return
-        if condition:
-            # Remove the lasting " AND "
-            condition = condition[:-5]
-            cursor.execute(f"SELECT * FROM [english data] WHERE {condition};")
-            result = cursor.fetchall()
-            data.commit()
+
+        condition = condition[:-5]
+
+        def database_action():
+            sql = f"SELECT *FROM [english data] WHERE {condition};"
+            cursor.execute(sql)
+            return cursor.fetchall()
+        
+        def embed_creator(pages, current_page, total_pages):
+            entry = pages[(current_page - 1) // 2]
+            embed = discord.Embed(
+                title=f"目前頁數 ({current_page}/{total_pages})",
+                color=0x3498db
+            )
+
+            if current_page % 2 == 1:
+                embed.add_field(
+                    name=f"ID: {entry[0]}",
+                    value=(
+                        f"**等級**: {entry[2]}\n"
+                        f"**單字**: {entry[1]}"
+                    ),
+                    inline=False
+                )
+            else:
+                embed.add_field(
+                    name=f"ID: {entry[0]} {entry[1]}",
+                    value=(
+                        f"**中文**: {entry[7]}\n"
+                        f"**特殊用法**: {entry[9]}\n"
+                        f"**特殊用法的中文**: {entry[10]}\n"
+                        f"**字根字首字尾**: {entry[6]}\n"
+                    ),
+                    inline=False
+                )
+            return embed
+        try:
+            result = database_action()
+            if not result:
+                await interaction.response.send_message("空的O.O")
+                return
+            
+            pages = result
+            total_pages = len(pages) * 2
+            current_page = start_page
+            if current_page < 1 or current_page > total_pages:
+                await interaction.response.send_message(f"頁數超出範圍，請輸入介於 1 到 {total_pages} 的頁數。")
+                return
+            output_embed = embed_creator(
+                pages,
+                current_page,
+                total_pages
+            )
+            view = self.PageView_for_Card(
+                pages,
+                current_page,
+                total_pages,
+                embed_creator
+            )
+            await interaction.response.send_message(embed=output_embed,view=view)
+
+        except Exception as e:
+            print("vocab_card 發生錯誤：")
+            print(type(e).__name__, e)
+            if not interaction.response.is_done():
+                await interaction.response.send_message(
+                    f"發生錯誤：`{type(e).__name__}: {e}`"
+                )
+
+    class PageView_for_Card(discord.ui.View):
+        def __init__(self,pages,current_page,total_pages,embed_creator):
+            super().__init__(timeout=60)
+            self.pages = pages
+            self.current_page = current_page
+            self.total_pages = total_pages
+            self.embed_creator = embed_creator
+
+        @discord.ui.button(label="⬅️",style=discord.ButtonStyle.secondary)
+        async def previous(self, interaction: discord.Interaction, button: discord.ui.Button):
+            if self.current_page > 1:
+                self.current_page -= 1
+                embed = self.embed_creator(self.pages,self.current_page,self.total_pages)
+                await interaction.response.edit_message(embed=embed,view=self)
+            else:
+                await interaction.response.defer()
+
+        @discord.ui.button(label="➡️",style=discord.ButtonStyle.secondary)
+        async def next(self, interaction: discord.Interaction, button: discord.ui.Button):
+            if self.current_page < self.total_pages:
+                self.current_page += 1
+                embed = self.embed_creator(self.pages,self.current_page,self.total_pages)
+                await interaction.response.edit_message(embed=embed,view=self)
+            else:
+                await interaction.response.defer()
+
+        async def on_timeout(self):
+            for item in self.children:
+                item.disabled = True
     
 async def setup(bot):
     await bot.add_cog(DatabaseCog(bot))
