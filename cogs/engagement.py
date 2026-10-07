@@ -24,14 +24,15 @@ class Engagement(commands.Cog):
             await interaction.response.send_message(f"出錯啦(╥﹏╥): {e}")
 
     @app_commands.command(name="a_uncertainty", description="計算A類不確定度")
-    async def a_uncertainty(self, interaction: discord.Interaction, *measurements: float):
-# *parameter = tuple
+    async def a_uncertainty(self, interaction: discord.Interaction, measurements: str):
         try:
+            measurements = measurements.replace(",", " ").split()
+            measurements = [float(x) for x in measurements]
             uncertainty = np.std(measurements, ddof=1) / (len(measurements) ** 0.5)
             await interaction.response.send_message(f"A類不確定度: {uncertainty}")
         except Exception as e:
             await interaction.response.send_message(f"出錯啦(╥﹏╥): {e}")
-            
+
     @app_commands.command(name="guess_dice", description="骰子比大小")
     async def random_dice(self, interaction: discord.Interaction, guess: str):
         return
