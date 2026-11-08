@@ -16,9 +16,10 @@ test_mod = False
 #open info file
 with open("info.json", "r", encoding="utf-8") as f:
     info=json.load(f)
-
+'''
 if not applicationID:
     applicationID = info["applicationID"]
+'''
 #app instance
 app = Quart(__name__)
 
