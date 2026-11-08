@@ -10,12 +10,15 @@ import json
 
 #variables definition area
 token="" #DC bot token
+applicationID="" #DC bot application ID
 test_mod = False
 
 #open info file
 with open("info.json", "r", encoding="utf-8") as f:
     info=json.load(f)
 
+if not applicationID:
+    applicationID = info["applicationID"]
 #app instance
 app = Quart(__name__)
 
@@ -34,13 +37,14 @@ class Bot(commands.Bot):
     #initial setting of the bot object
     #"self" is some of the object's default attributes.
     def __init__(self):
-        super().__init__(command_prefix="/", intents=intents, application_id=info["applicationID"])
+        super().__init__(command_prefix="/", intents=intents, application_id=applicationID)
     #below is to load cogs files if existing
     async def setup_hook(self):
         await self.load_extension("cogs.database_cogs_123xyz")
         await self.load_extension("cogs.manager_cogs")
         await self.load_extension("cogs.general")
         await self.load_extension("cogs.engagement")
+        await self.load_extension("cogs.part_one")
 
         print("\n目前 Bot Tree 指令：")
 
@@ -94,10 +98,10 @@ async def on_ready():
 #start (run if the file is original and not imported)
 async def main():
     try:
-        token = os.environ["TOKEN"]
+        token = info["token"]
     except KeyError:
         try:
-            token = info["token"]
+            token = os.environ["TOKEN"]
         except KeyError:
             print("Error: 無法在控制台或info.json取得有效token.")
             return
