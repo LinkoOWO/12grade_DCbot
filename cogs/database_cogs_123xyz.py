@@ -179,40 +179,38 @@ class DatabaseCog(commands.Cog):
             Choice(name="L4", value="4"),
             Choice(name="L5", value="5"),
             Choice(name="L6", value="6"),
-            Choice(name="其他", value="7")
+            Choice(name="其他", value="7"),
+            Choice(name="翻譯用字", value="8")
         ]
     )
-    async def check_and_show(
-        self, interaction: discord.Interaction, level: Choice[str] = None, prefix: str = "0", root: str = "0", suffix: str = "0", mode: Choice[int] = None):
+    async def check_and_show(self, interaction: discord.Interaction, level: Choice[str] = None, prefix: str = "0", root: str = "0", suffix: str = "0", mode: Choice[int] = None):
 
         level_value = level.value if level else "0"
         mode_value = mode.value if mode else 3
 
-        condition = ""
+        conditions = []
+        parameters = []
         if level_value != "0":
-            condition += f"等級='L{level_value}' AND "
-        if prefix != "0":
-            condition += f"字首='{prefix}' AND "
-        if root != "0":
-            condition += f"字根='{root}' AND "
-        if suffix != "0":
-            condition += f"字尾='{suffix}' AND "
-        if not condition and mode_value != 3:
+            conditions.append("等級 = ?")
+            parameters.append(f"L{level_value}")
+        for column, value in (("字首", prefix), ("字根", root), ("字尾", suffix)):
+            if value != "0":
+                escaped_value = value.replace("!", "!!").replace("%", "!%").replace("_", "!_")
+                conditions.append(f"{column} LIKE ? ESCAPE '!'")
+                parameters.append(f"%{escaped_value}%")
+        if not conditions and mode_value != 3:
             await interaction.response.send_message(
                 "倒是幫我買一套篩選器阿(`皿´)"
             )
             return
 
-        if condition:
-            condition = condition[:-5]
-
         def database_action():
-            if condition:
-                sql = f"SELECT * FROM [english data] WHERE {condition};"
+            if conditions:
+                sql = f"SELECT * FROM [english data] WHERE {' AND '.join(conditions)};"
             else:
                 sql = "SELECT * FROM [english data];"
             print(sql)
-            cursor.execute(sql)
+            cursor.execute(sql, parameters)
             result = cursor.fetchall()
             return result
 
@@ -355,7 +353,8 @@ class DatabaseCog(commands.Cog):
             Choice(name="L4", value="4"),
             Choice(name="L5", value="5"),
             Choice(name="L6", value="6"),
-            Choice(name="其他", value="7")
+            Choice(name="其他", value="7"),
+            Choice(name="翻譯用字", value="8")
         ]
     )
     async def vocab_card(self, interaction: discord.Interaction, level: Choice[str] = None, prefix: str = "0", root: str = "0", suffix: str = "0", start_page: int = 1):

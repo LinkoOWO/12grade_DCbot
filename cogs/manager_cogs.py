@@ -22,12 +22,14 @@ class Manager(commands.Cog):
         await interaction.response.send_message("晚安~ (｡･ω･｡)ﾉ♡")
         await self.bot.close()
 
-    '''@app_commands.command(name="restart", description="叫這隻Yuri去重啟...只能讓主人叫她重啟喔~")
+    '''
+    @app_commands.command(name="restart", description="叫這隻Yuri去重啟...只能讓主人叫她重啟喔~")
     @is_admin()
     async def restart(self, interaction: discord.Interaction):
         await interaction.response.send_message("重啟中... (｡･ω･｡)ﾉ♡")
         await self.bot.close()
-        os.execv(sys.executable, ['python'] + sys.argv)'''
+        os.execv(sys.executable, ['python'] + sys.argv)
+    '''
 
     @app_commands.command(name="cog_upload", description="穿裝備啦~(載入一個 Cog)（限管理員）")
     @is_admin()
@@ -66,6 +68,7 @@ class Manager(commands.Cog):
         else:
             formatted = "\n".join([f"`{c}`" for c in cogs])
             await interaction.response.send_message(f"打包完啦(๑¯∀¯๑):\n{formatted}")
+    
 
 async def setup(bot):
     await bot.add_cog(Manager(bot))

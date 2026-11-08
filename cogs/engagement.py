@@ -22,7 +22,7 @@ class Engagement(commands.Cog):
             await interaction.response.send_message(f"抽完啦(๑>◡<๑) 抽到了{response_n}")
         except Exception as e:
             await interaction.response.send_message(f"出錯啦(╥﹏╥): {e}")
-
+    '''
     @app_commands.command(name="a_uncertainty", description="計算A類不確定度")
     async def a_uncertainty(self, interaction: discord.Interaction, measurements: str):
         try:
@@ -32,11 +32,13 @@ class Engagement(commands.Cog):
             await interaction.response.send_message(f"A類不確定度: {uncertainty}")
         except Exception as e:
             await interaction.response.send_message(f"出錯啦(╥﹏╥): {e}")
-
+    '''
+    '''
     @app_commands.command(name="guess_dice", description="骰子比大小")
     async def random_dice(self, interaction: discord.Interaction, guess: str):
         return
-
+    '''
+    '''
     @app_commands.command(name="tri_functions", description="6大三角函數 hypo斜oppo對adja鄰 請輸入直角三角形")
     async def trigonometric_functions(self, interaction: discord.Interaction, hypotenuse: int, opposite: int, adjacent: int, degree: int, radium: int):
         def right_triangle(x: int, y: int, z:int):
@@ -58,6 +60,6 @@ class Engagement(commands.Cog):
             cos_c = ((a**2+b**2-c**2)/2*a*b)**0.5
             l_cos = [cos_a, cos_b, cos_c]
             return l_cos
-
+    '''
 async def setup(bot):
     await bot.add_cog(Engagement(bot))

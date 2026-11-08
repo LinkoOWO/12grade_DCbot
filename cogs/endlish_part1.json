@@ -1,0 +1,2602 @@
+{
+    "1": {
+        "Q": "Ruth Bader Ginsburg was one of the most important and ______ feminist lawyers in the history of America and her death in September, 2020 saddened the world.",
+        "A": "innocent",
+        "B": "commercial",
+        "C": "ordinary",
+        "D": "influential",
+        "Correct": "D",
+        "year": "110",
+        "no": "1"
+    },
+    "2": {
+        "Q": "We can never be too careful in our ______ choice because we spend large parts of our life working.",
+        "A": "career",
+        "B": "dietary",
+        "C": "material",
+        "D": "destination",
+        "Correct": "A",
+        "year": "110",
+        "no": "1"
+    },
+    "3": {
+        "Q": "The billionaire never considers himself to be rich enough and he is always ______ for more money.",
+        "A": "greedy",
+        "B": "suitable",
+        "C": "permissible",
+        "D": "unacceptable",
+        "Correct": "A",
+        "year": "110",
+        "no": "1"
+    },
+    "4": {
+        "Q": "Jordan ______ his knee from tripping on the sidewalk and he applied a bandage to cover the wound.",
+        "A": "skipped",
+        "B": "repaired",
+        "C": "scraped",
+        "D": "relieved",
+        "Correct": "C",
+        "year": "110",
+        "no": "1"
+    },
+    "5": {
+        "Q": "Many backpackers travel on a tight ______, so they can't afford to stay in luxury hotels.",
+        "A": "deadline",
+        "B": "budget",
+        "C": "schedule",
+        "D": "relationship",
+        "Correct": "B",
+        "year": "110",
+        "no": "1"
+    },
+    "6": {
+        "Q": "Some simple ______, like wearing a mask, washing hands frequently and avoiding crowds, can help you protect yourself and others from COVID-19.",
+        "A": "symptoms",
+        "B": "precautions",
+        "C": "bargains",
+        "D": "gestures",
+        "Correct": "B",
+        "year": "110",
+        "no": "1"
+    },
+    "7": {
+        "Q": "Ang Lee's Sense & Sensibility, ______ from Jane Austen's novel of the same name, is widely accepted as one of the best movies.",
+        "A": "published",
+        "B": "illustrated",
+        "C": "displayed",
+        "D": "adapted",
+        "Correct": "D",
+        "year": "110",
+        "no": "1"
+    },
+    "8": {
+        "Q": "Black Lives Matter (BLM) protests went global after George Floyd was killed by a white police officer who knelt on his neck for ______ nine minutes.",
+        "A": "nearly",
+        "B": "hardly",
+        "C": "ideally",
+        "D": "occasionally",
+        "Correct": "A",
+        "year": "110",
+        "no": "1"
+    },
+    "9": {
+        "Q": "When mobile phones were just introduced, they were heavy and ______ to use, but nowadays they are much easier to handle.",
+        "A": "fatal",
+        "B": "handy",
+        "C": "clumsy",
+        "D": "genuine",
+        "Correct": "C",
+        "year": "110",
+        "no": "1"
+    },
+    "10": {
+        "Q": "NASA astronauts reported ______ space crops grown in the space station, saying that the plants were delicious and safe to eat.",
+        "A": "capturing",
+        "B": "expressing",
+        "C": "recovering",
+        "D": "harvesting",
+        "Correct": "D",
+        "year": "110",
+        "no": "1"
+    },
+    "11": {
+        "Q": "Some Chinese idioms have no ______ in English. That's why some meanings of them will get lost in translation.",
+        "A": "equivalent",
+        "B": "adjustment",
+        "C": "property",
+        "D": "capacity",
+        "Correct": "A",
+        "year": "110",
+        "no": "2"
+    },
+    "12": {
+        "Q": "Some of Wendy's friends agree with her ______ political views. Going to extremes is never a suitable solution, though.",
+        "A": "sensory",
+        "B": "desperate",
+        "C": "infinite",
+        "D": "radical",
+        "Correct": "D",
+        "year": "110",
+        "no": "2"
+    },
+    "13": {
+        "Q": "She was offended by her boss's inappropriate ______ at the office, and decided to sue him for sexual harassment.",
+        "A": "portrait",
+        "B": "insight",
+        "C": "conduct",
+        "D": "obstacle",
+        "Correct": "C",
+        "year": "110",
+        "no": "2"
+    },
+    "14": {
+        "Q": "Australian Prime Minister declared that they would not be ______ even though Facebook blocked Australian users from viewing or sharing news, which had undermined the government.",
+        "A": "jeopardized",
+        "B": "deteriorated",
+        "C": "intimidated",
+        "D": "acknowledged",
+        "Correct": "C",
+        "year": "110",
+        "no": "2"
+    },
+    "15": {
+        "Q": "The patriotic soldier received two million dollars from the government in ______ for his lost eye in the war.",
+        "A": "compensation",
+        "B": "enhancement",
+        "C": "surveillance",
+        "D": "ingenuity",
+        "Correct": "A",
+        "year": "110",
+        "no": "2"
+    },
+    "16": {
+        "Q": "It was ______ impossible for baseball players to have both 45 home runs and 156 strikeouts in the same season. However, Shohei Ohtani made history this year.",
+        "A": "respectively",
+        "B": "chronically",
+        "C": "frantically",
+        "D": "virtually",
+        "Correct": "D",
+        "year": "110",
+        "no": "2"
+    },
+    "17": {
+        "Q": "The value of the company's stocks ______ dramatically, resulting in investors' losses of millions of dollars.",
+        "A": "stumbled",
+        "B": "plunged",
+        "C": "distorted",
+        "D": "unfolded",
+        "Correct": "B",
+        "year": "110",
+        "no": "2"
+    },
+    "18": {
+        "Q": "Stephen made a huge ______ by underestimating his opponent, which caused him to lose the tennis match in the end.",
+        "A": "blunder",
+        "B": "protest",
+        "C": "attempt",
+        "D": "scheme",
+        "Correct": "A",
+        "year": "110",
+        "no": "2"
+    },
+    "19": {
+        "Q": "Avoid writing so many ______ sentences in your essay. Be clear and specific, or readers might fail to understand the ideas you express.",
+        "A": "despicable",
+        "B": "ambiguous",
+        "C": "obstinate",
+        "D": "tentative",
+        "Correct": "B",
+        "year": "110",
+        "no": "2"
+    },
+    "20": {
+        "Q": "Besides regular exercise and a balanced diet, it is also strongly suggested that people go for ______ health checkups to prevent and detect diseases at an early stage.",
+        "A": "reckless",
+        "B": "exclusive",
+        "C": "periodical",
+        "D": "imperative",
+        "Correct": "C",
+        "year": "110",
+        "no": "2"
+    },
+    "21": {
+        "Q": "Our school library lists all books available on an electronic ______, which makes it easy for us to find out the book we are looking for.",
+        "A": "label",
+        "B": "database",
+        "C": "troop",
+        "D": "situation",
+        "Correct": "B",
+        "year": "110",
+        "no": "1"
+    },
+    "22": {
+        "Q": "Frequent exposure to ______, even on TV, makes children more likely to behave aggressively.",
+        "A": "information",
+        "B": "efficiency",
+        "C": "poverty",
+        "D": "violence",
+        "Correct": "D",
+        "year": "110",
+        "no": "1"
+    },
+    "23": {
+        "Q": "As an adventurous traveler, whenever Miranda goes abroad, she will ______ a new city through a food tour.",
+        "A": "explore",
+        "B": "invade",
+        "C": "occupy",
+        "D": "remove",
+        "Correct": "A",
+        "year": "110",
+        "no": "1"
+    },
+    "24": {
+        "Q": "Alfred is very ______ with his money. He likes to save it and doesn't invest in high-risk shares.",
+        "A": "generous",
+        "B": "energetic",
+        "C": "credited",
+        "D": "sensible",
+        "Correct": "D",
+        "year": "110",
+        "no": "1"
+    },
+    "25": {
+        "Q": "The company has thousands of jars of formula milk and baby food ______ after a salmonella scare.",
+        "A": "replaced",
+        "B": "performed",
+        "C": "recalled",
+        "D": "confirmed",
+        "Correct": "C",
+        "year": "110",
+        "no": "1"
+    },
+    "26": {
+        "Q": "Emotional ______, the ability to detect one's own and other people's emotions, is very important in our everyday lives.",
+        "A": "intelligence",
+        "B": "preparation",
+        "C": "concentration",
+        "D": "occasion",
+        "Correct": "A",
+        "year": "110",
+        "no": "1"
+    },
+    "27": {
+        "Q": "In order to slow down global warming, Tesla, an American electric vehicle and clean energy company, aims to ______ reduce the carbon footprints of its products.",
+        "A": "slightly",
+        "B": "considerably",
+        "C": "hastily",
+        "D": "commercially",
+        "Correct": "B",
+        "year": "110",
+        "no": "1"
+    },
+    "28": {
+        "Q": "Though the Miami Heat had done everything they could, the Lakers still ______ the game in the NBA Finals of 2020 and won its 17th championship title.",
+        "A": "dominated",
+        "B": "demanded",
+        "C": "predicted",
+        "D": "tolerated",
+        "Correct": "A",
+        "year": "110",
+        "no": "1"
+    },
+    "29": {
+        "Q": "Jimmy's disappointment and frustration were ______ as he tore up the exam paper and threw it into the garbage can.",
+        "A": "modest",
+        "B": "evident",
+        "C": "reluctant",
+        "D": "essential",
+        "Correct": "B",
+        "year": "110",
+        "no": "1"
+    },
+    "30": {
+        "Q": "As the helicopter flew around, the people stranded on the lone island waved frantically, trying to get its attention.",
+        "A": "adequately",
+        "B": "objectively",
+        "C": "desperately",
+        "D": "enormously",
+        "Correct": "C",
+        "year": "110",
+        "no": "1"
+    },
+    "31": {
+        "Q": "Our school library lists all books available on an electronic ______, which makes it easy for us to find out the book we are looking for.",
+        "A": "label",
+        "B": "database",
+        "C": "troop",
+        "D": "situation",
+        "Correct": "B",
+        "year": "110",
+        "no": "2"
+    },
+    "32": {
+        "Q": "Frequent exposure to ______, even on TV, makes children more likely to behave aggressively.",
+        "A": "information",
+        "B": "efficiency",
+        "C": "poverty",
+        "D": "violence",
+        "Correct": "D",
+        "year": "110",
+        "no": "2"
+    },
+    "33": {
+        "Q": "As an adventurous traveler, whenever Miranda goes abroad, she will ______ a new city through a food tour.",
+        "A": "explore",
+        "B": "invade",
+        "C": "occupy",
+        "D": "remove",
+        "Correct": "A",
+        "year": "110",
+        "no": "2"
+    },
+    "34": {
+        "Q": "Alfred is very ______ with his money. He likes to save it and doesn't invest in high-risk shares.",
+        "A": "generous",
+        "B": "energetic",
+        "C": "credited",
+        "D": "sensible",
+        "Correct": "D",
+        "year": "110",
+        "no": "2"
+    },
+    "35": {
+        "Q": "The company has thousands of jars of formula milk and baby food ______ after a salmonella scare.",
+        "A": "replaced",
+        "B": "performed",
+        "C": "recalled",
+        "D": "confirmed",
+        "Correct": "C",
+        "year": "110",
+        "no": "2"
+    },
+    "36": {
+        "Q": "Emotional ______, the ability to detect one's own and other people's emotions, is very important in our everyday lives.",
+        "A": "intelligence",
+        "B": "preparation",
+        "C": "concentration",
+        "D": "occasion",
+        "Correct": "A",
+        "year": "110",
+        "no": "2"
+    },
+    "37": {
+        "Q": "In order to slow down global warming, Tesla, an American electric vehicle and clean energy company, aims to ______ reduce the carbon footprints of its products.",
+        "A": "slightly",
+        "B": "considerably",
+        "C": "hastily",
+        "D": "commercially",
+        "Correct": "B",
+        "year": "110",
+        "no": "2"
+    },
+    "38": {
+        "Q": "Though the Miami Heat had done everything they could, the Lakers still ______ the game in the NBA Finals of 2020 and won its 17th championship title.",
+        "A": "dominated",
+        "B": "demanded",
+        "C": "predicted",
+        "D": "tolerated",
+        "Correct": "A",
+        "year": "110",
+        "no": "2"
+    },
+    "39": {
+        "Q": "Jimmy's disappointment and frustration were ______ as he tore up the exam paper and threw it into the garbage can.",
+        "A": "modest",
+        "B": "evident",
+        "C": "reluctant",
+        "D": "essential",
+        "Correct": "B",
+        "year": "110",
+        "no": "2"
+    },
+    "40": {
+        "Q": "As the helicopter flew around, the people stranded on the lone island waved frantically, trying to get its attention.",
+        "A": "adequately",
+        "B": "objectively",
+        "C": "desperately",
+        "D": "enormously",
+        "Correct": "C",
+        "year": "110",
+        "no": "2"
+    },
+    "41": {
+        "Q": "John F. Kennedy, 35th president of the U.S., is famously ______ as saying, \"Ask not what your country can do for you—ask what you can do for your country.\"",
+        "A": "adapted",
+        "B": "quoted",
+        "C": "transmitted",
+        "D": "inspired",
+        "Correct": "B",
+        "year": "110",
+        "no": "3"
+    },
+    "42": {
+        "Q": "Exercising in the scorching sun for long hours on a hot summer day increases the risk of heatstroke, which may cause vomiting, high body temperature, ______, etc.",
+        "A": "dizziness",
+        "B": "plague",
+        "C": "solitude",
+        "D": "limb",
+        "Correct": "A",
+        "year": "110",
+        "no": "3"
+    },
+    "43": {
+        "Q": "The candidate's chances of winning the election seemed increasingly ______ after the press exposed his sexual affair with his secretary.",
+        "A": "lofty",
+        "B": "minimum",
+        "C": "abstract",
+        "D": "slim",
+        "Correct": "D",
+        "year": "110",
+        "no": "3"
+    },
+    "44": {
+        "Q": "The water pipe under the kitchen sink is leaking. You had better get a(n) ______ to check and repair it as soon as possible.",
+        "A": "authority",
+        "B": "executive",
+        "C": "sculptor",
+        "D": "plumber",
+        "Correct": "D",
+        "year": "110",
+        "no": "3"
+    },
+    "45": {
+        "Q": "Please fill out the form and submit your application by mail using the stamped envelope ______ in the letter.",
+        "A": "enclosed",
+        "B": "slipped",
+        "C": "accompanied",
+        "D": "disposed",
+        "Correct": "A",
+        "year": "110",
+        "no": "3"
+    },
+    "46": {
+        "Q": "Any investment ______ involves risk, so always think twice before you put money into the stock market.",
+        "A": "particularly",
+        "B": "habitually",
+        "C": "inevitably",
+        "D": "objectively",
+        "Correct": "C",
+        "year": "110",
+        "no": "3"
+    },
+    "47": {
+        "Q": "Rachael's job as the note taker is to type up the taped ______ of the discussion during the meeting word for word.",
+        "A": "access",
+        "B": "transcript",
+        "C": "craft",
+        "D": "profile",
+        "Correct": "B",
+        "year": "110",
+        "no": "3"
+    },
+    "48": {
+        "Q": "The electric power company ______ the power failure last night to the wild winds that brought down utility poles and power lines across the city.",
+        "A": "dodged",
+        "B": "reflected",
+        "C": "hastened",
+        "D": "attributed",
+        "Correct": "D",
+        "year": "110",
+        "no": "3"
+    },
+    "49": {
+        "Q": "It is reported that some wild animals are spotted wandering on the ______ streets during the coronavirus lockdown.",
+        "A": "artificial",
+        "B": "primitive",
+        "C": "vacant",
+        "D": "dynamic",
+        "Correct": "C",
+        "year": "110",
+        "no": "3"
+    },
+    "50": {
+        "Q": "After days of ______ negotiations, the two hostile countries finally agreed to a ceasefire for the time being.",
+        "A": "pessimistic",
+        "B": "tedious",
+        "C": "compatible",
+        "D": "gracious",
+        "Correct": "B",
+        "year": "110",
+        "no": "3"
+    },
+    "51": {
+        "Q": "The head of the ______ is a popular speaker because everyone enjoys his stories of how he built his company.",
+        "A": "enterprise",
+        "B": "surrender",
+        "C": "memorial",
+        "D": "resignation",
+        "Correct": "A",
+        "year": "110",
+        "no": "4"
+    },
+    "52": {
+        "Q": "John came up with a ______ idea for our class project that has never been done before and everyone seemed impressed with the innovative idea.",
+        "A": "brief",
+        "B": "present",
+        "C": "realistic",
+        "D": "novel",
+        "Correct": "D",
+        "year": "110",
+        "no": "4"
+    },
+    "53": {
+        "Q": "People in authority may ______ their power by making unreasonable demands or bossing others around.",
+        "A": "abuse",
+        "B": "satisfy",
+        "C": "smash",
+        "D": "resume",
+        "Correct": "A",
+        "year": "110",
+        "no": "4"
+    },
+    "54": {
+        "Q": "Despite the negative signs, the coach ______ firm in her belief that our team will beat our rivals eventually.",
+        "A": "preserves",
+        "B": "deserves",
+        "C": "remains",
+        "D": "maintains",
+        "Correct": "C",
+        "year": "110",
+        "no": "4"
+    },
+    "55": {
+        "Q": "Public bike rental systems like U-Bike have made cycling an increasingly popular ______ of transportation for tourists and commuters.",
+        "A": "content",
+        "B": "frame",
+        "C": "means",
+        "D": "status",
+        "Correct": "C",
+        "year": "110",
+        "no": "4"
+    },
+    "56": {
+        "Q": "Max never keeps money in the banks but prefers making risky ______ because he believes it is the only way to guarantee handsome rewards.",
+        "A": "approaches",
+        "B": "insurances",
+        "C": "investments",
+        "D": "reservations",
+        "Correct": "C",
+        "year": "110",
+        "no": "4"
+    },
+    "57": {
+        "Q": "Unlike her ______ husband, Connie is fairly liberal and gives her children plenty of freedom to decide what they want with their life.",
+        "A": "beneficial",
+        "B": "conservative",
+        "C": "identical",
+        "D": "obsessed",
+        "Correct": "B",
+        "year": "110",
+        "no": "4"
+    },
+    "58": {
+        "Q": "Judy bears striking ______ to her twin sister, and most people can hardly tell them apart.",
+        "A": "notification",
+        "B": "resemblance",
+        "C": "identification",
+        "D": "prominence",
+        "Correct": "B",
+        "year": "110",
+        "no": "4"
+    },
+    "59": {
+        "Q": "The more people are vaccinated, the more likely we are to ______ the impacts potential outbreaks of COVID-19 will bring about in the future.",
+        "A": "alienate",
+        "B": "designate",
+        "C": "identify",
+        "D": "withstand",
+        "Correct": "D",
+        "year": "110",
+        "no": "4"
+    },
+    "60": {
+        "Q": "While the new ______ proposed by the Ministry of Education draws some criticism, some believe it can meet the needs of students living in a digital age.",
+        "A": "curriculum",
+        "B": "tournament",
+        "C": "orientation",
+        "D": "revolution",
+        "Correct": "A",
+        "year": "110",
+        "no": "4"
+    },
+    "61": {
+        "Q": "Due to his excellent academic performance, Sam went to his ideal university on a ______.",
+        "A": "harmony",
+        "B": "publication",
+        "C": "foundation",
+        "D": "scholarship",
+        "Correct": "D",
+        "year": "110",
+        "no": "1"
+    },
+    "62": {
+        "Q": "The new album sold pretty well. It is ______ unavailable in any store.",
+        "A": "currently",
+        "B": "miserably",
+        "C": "improperly",
+        "D": "sufficiently",
+        "Correct": "A",
+        "year": "110",
+        "no": "1"
+    },
+    "63": {
+        "Q": "You may feel ______ after taking the pills, so you can take a nap if you want.",
+        "A": "desirable",
+        "B": "vague",
+        "C": "temporary",
+        "D": "drowsy",
+        "Correct": "D",
+        "year": "110",
+        "no": "1"
+    },
+    "64": {
+        "Q": "To make a ______ decision, one must stay informed and think critically.",
+        "A": "sensible",
+        "B": "technical",
+        "C": "liberal",
+        "D": "vacant",
+        "Correct": "A",
+        "year": "110",
+        "no": "1"
+    },
+    "65": {
+        "Q": "With a seating ______ of up to 2,500 people, the concert hall can take in a large audience.",
+        "A": "circumstance",
+        "B": "capacity",
+        "C": "operation",
+        "D": "signature",
+        "Correct": "B",
+        "year": "110",
+        "no": "1"
+    },
+    "66": {
+        "Q": "The improved equipment has made the results of the experiment more ______ and reliable.",
+        "A": "primary",
+        "B": "crunchy",
+        "C": "accurate",
+        "D": "wicked",
+        "Correct": "C",
+        "year": "110",
+        "no": "1"
+    },
+    "67": {
+        "Q": "______ is important for efficient self-learning. Those with more self-control can produce better learning results.",
+        "A": "Modesty",
+        "B": "Interference",
+        "C": "Discipline",
+        "D": "Reception",
+        "Correct": "C",
+        "year": "110",
+        "no": "1"
+    },
+    "68": {
+        "Q": "The tax reform has ______ a heated debate across the country. It's almost an everyday topic of conversation.",
+        "A": "minimized",
+        "B": "sparked",
+        "C": "hooked",
+        "D": "endured",
+        "Correct": "B",
+        "year": "110",
+        "no": "1"
+    },
+    "69": {
+        "Q": "Kevin never ______ from challenges. He is willing to take risks and try new things.",
+        "A": "shrinks",
+        "B": "wanders",
+        "C": "suppresses",
+        "D": "loosens",
+        "Correct": "A",
+        "year": "110",
+        "no": "1"
+    },
+    "70": {
+        "Q": "The children ______ when Ms. Wu made a funny face while telling the story.",
+        "A": "implied",
+        "B": "twisted",
+        "C": "fetched",
+        "D": "giggled",
+        "Correct": "D",
+        "year": "110",
+        "no": "1"
+    },
+    "71": {
+        "Q": "The project manager's proposal doesn't seem very ______. It might work in theory, but in fact, the company doesn't have so many funds to support it.",
+        "A": "relevant",
+        "B": "practical",
+        "C": "capable",
+        "D": "sufficient",
+        "Correct": "B",
+        "year": "111",
+        "no": "1"
+    },
+    "72": {
+        "Q": "Patients suffering from severe depression often ______ symptoms of insomnia, irregular sleep patterns, and anxiety.",
+        "A": "harbor",
+        "B": "impose",
+        "C": "exhibit",
+        "D": "diagnose",
+        "Correct": "C",
+        "year": "111",
+        "no": "1"
+    },
+    "73": {
+        "Q": "This YouTube video highlights a little girl who has a ______ voice that separates her from all the other girls of her age.",
+        "A": "vivid",
+        "B": "fragrant",
+        "C": "permanent",
+        "D": "distinctive",
+        "Correct": "D",
+        "year": "111",
+        "no": "1"
+    },
+    "74": {
+        "Q": "Peanuts, oats, blueberries, and pumpkin seeds are considered nutritious ______ you can add to your pre-workout snack to improve performance.",
+        "A": "ingredients",
+        "B": "combinations",
+        "C": "objectives",
+        "D": "inspirations",
+        "Correct": "A",
+        "year": "111",
+        "no": "1"
+    },
+    "75": {
+        "Q": "Although Stephen Hawking contracted a disease in his early twenties that gradually ______ him of his mobility, he continued to work despite the disease's progressively disabling effects.",
+        "A": "robbed",
+        "B": "threatened",
+        "C": "informed",
+        "D": "accused",
+        "Correct": "A",
+        "year": "111",
+        "no": "1"
+    },
+    "76": {
+        "Q": "While English and German are commonly used in the Netherlands, the ______ language of the country is Dutch, which is spoken by more than 97% of the population.",
+        "A": "universal",
+        "B": "identical",
+        "C": "legal",
+        "D": "dominant",
+        "Correct": "D",
+        "year": "111",
+        "no": "1"
+    },
+    "77": {
+        "Q": "During the pandemic, most people have been restricted to their dwelling places, thus allowing online shopping to be ______ at an unprecedented rate.",
+        "A": "thriving",
+        "B": "alternating",
+        "C": "collapsing",
+        "D": "advancing",
+        "Correct": "A",
+        "year": "111",
+        "no": "1"
+    },
+    "78": {
+        "Q": "The Executive Yuan approved a fiscal ______ of NT$2.2491 trillion put forth by the central government, which focuses heavily on social welfare funding.",
+        "A": "reserve",
+        "B": "saving",
+        "C": "budget",
+        "D": "charge",
+        "Correct": "C",
+        "year": "111",
+        "no": "1"
+    },
+    "79": {
+        "Q": "Working holidays offer the chance to experience exotic culture and make money. Young people, ______ those aged between 18 to 30, are best candidates for such programs.",
+        "A": "individually",
+        "B": "evidently",
+        "C": "considerably",
+        "D": "preferably",
+        "Correct": "D",
+        "year": "111",
+        "no": "1"
+    },
+    "80": {
+        "Q": "Having been married for decades, my uncle was unable to live his normal life as he was ______ with grief over the death of my aunt.",
+        "A": "stranded",
+        "B": "overwhelmed",
+        "C": "disconnected",
+        "D": "released",
+        "Correct": "B",
+        "year": "111",
+        "no": "1"
+    },
+    "81": {
+        "Q": "Research has shown that people who frequently ______ themselves in junk food have a higher risk of suffering from obesity and related diseases.",
+        "A": "justify",
+        "B": "manifest",
+        "C": "indulge",
+        "D": "devote",
+        "Correct": "C",
+        "year": "111",
+        "no": "2"
+    },
+    "82": {
+        "Q": "In many countries, public display of ______ such as hugging and kissing is socially unacceptable and legally criminal.",
+        "A": "melancholy",
+        "B": "affection",
+        "C": "correspondence",
+        "D": "mischief",
+        "Correct": "B",
+        "year": "111",
+        "no": "2"
+    },
+    "83": {
+        "Q": "With COVID-19 infections steadily declining and vaccinations increasing, the government officials are cautiously ______ about border reopening.",
+        "A": "distinguished",
+        "B": "peculiar",
+        "C": "faithful",
+        "D": "optimistic",
+        "Correct": "D",
+        "year": "111",
+        "no": "2"
+    },
+    "84": {
+        "Q": "Even more than a decade after the Great East Japan Earthquake ravaged northeastern Japan on March 11, 2011, the tragedy ______ in the minds of the survivors.",
+        "A": "lingers",
+        "B": "deposits",
+        "C": "abounds",
+        "D": "rejoices",
+        "Correct": "A",
+        "year": "111",
+        "no": "2"
+    },
+    "85": {
+        "Q": "Titanic is widely considered one of the best movies ever made. It not only drew critical ______ but also achieved commercial success.",
+        "A": "instinct",
+        "B": "acclaim",
+        "C": "discipline",
+        "D": "compromise",
+        "Correct": "B",
+        "year": "111",
+        "no": "2"
+    },
+    "86": {
+        "Q": "An alien who marries a national of the Republic of China (Taiwan) is ______ to apply for citizenship and permanent residency.",
+        "A": "exclusive",
+        "B": "competent",
+        "C": "destined",
+        "D": "eligible",
+        "Correct": "D",
+        "year": "111",
+        "no": "2"
+    },
+    "87": {
+        "Q": "This multinational corporation has obtained a wholesale license to ______ Coca-Cola beverages in Southeast Asia.",
+        "A": "escort",
+        "B": "distribute",
+        "C": "auction",
+        "D": "scramble",
+        "Correct": "B",
+        "year": "111",
+        "no": "2"
+    },
+    "88": {
+        "Q": "The construction of the Taipei Dome is scheduled to be completed this year. This multi-purpose arena will have a seating ______ of 40,000 people.",
+        "A": "capacity",
+        "B": "skyscraper",
+        "C": "cluster",
+        "D": "vacancy",
+        "Correct": "A",
+        "year": "111",
+        "no": "2"
+    },
+    "89": {
+        "Q": "After investigation, the police noticed a ______ parallel between the two murder cases. The victim in each case had worked part-time at the same convenience store.",
+        "A": "striking",
+        "B": "ragged",
+        "C": "lucrative",
+        "D": "hoarse",
+        "Correct": "A",
+        "year": "111",
+        "no": "2"
+    },
+    "90": {
+        "Q": "To put it ______, the government's efforts to solve the problem of high housing prices in urban areas leave much to be desired.",
+        "A": "steeply",
+        "B": "frantically",
+        "C": "bluntly",
+        "D": "lavishly",
+        "Correct": "C",
+        "year": "111",
+        "no": "2"
+    },
+    "91": {
+        "Q": "Many people believe that, with their keen sense of smelling and hearing, animals can be ______ in predicting the weather.",
+        "A": "emotional",
+        "B": "poisonous",
+        "C": "accurate",
+        "D": "consistent",
+        "Correct": "C",
+        "year": "111",
+        "no": "1"
+    },
+    "92": {
+        "Q": "The street performer spared no effort interacting with passers-by, so that they would not stop by out of ______ and walk right away out of boredom.",
+        "A": "curiosity",
+        "B": "disappointment",
+        "C": "innocence",
+        "D": "embarrassment",
+        "Correct": "A",
+        "year": "111",
+        "no": "1"
+    },
+    "93": {
+        "Q": "Kids and people with certain mental disorders may have difficulty ______ between fantasy and reality, having false ideas about what is taking place or who one is.",
+        "A": "compromising",
+        "B": "associating",
+        "C": "exchanging",
+        "D": "distinguishing",
+        "Correct": "D",
+        "year": "111",
+        "no": "1"
+    },
+    "94": {
+        "Q": "If children are to live up to their parents' ______, it means that they, instead of caring for the things they want in life, care more about what their parents want.",
+        "A": "achievements",
+        "B": "expectations",
+        "C": "emotions",
+        "D": "representations",
+        "Correct": "B",
+        "year": "111",
+        "no": "1"
+    },
+    "95": {
+        "Q": "Before the public sale, the organizer has to make sure if the art at the sale is a(n) ______ piece of work or a fake copy.",
+        "A": "genuine",
+        "B": "eternal",
+        "C": "standard",
+        "D": "faithful",
+        "Correct": "A",
+        "year": "111",
+        "no": "1"
+    },
+    "96": {
+        "Q": "Health authorities are encouraging people to get vaccinated, for the number of people ______ with the Omicron variant of the coronavirus are rising.",
+        "A": "affected",
+        "B": "infected",
+        "C": "occupied",
+        "D": "rewarded",
+        "Correct": "B",
+        "year": "111",
+        "no": "1"
+    },
+    "97": {
+        "Q": "The power company official told the press that they had ______ to restore the electricity and investigated the cause of the blackout.",
+        "A": "assured",
+        "B": "exposed",
+        "C": "managed",
+        "D": "departed",
+        "Correct": "C",
+        "year": "111",
+        "no": "1"
+    },
+    "98": {
+        "Q": "In order to improve ourselves and learn from our mistakes, we should take criticisms ______, not personally, and thank those who are willing to point out the problems.",
+        "A": "seriously",
+        "B": "painfully",
+        "C": "desperately",
+        "D": "gradually",
+        "Correct": "A",
+        "year": "111",
+        "no": "1"
+    },
+    "99": {
+        "Q": "The heartbroken mother accused the suspect of hurting her son on ______, while the suspect himself claimed that he did it on impulse.",
+        "A": "average",
+        "B": "cruelty",
+        "C": "request",
+        "D": "purpose",
+        "Correct": "D",
+        "year": "111",
+        "no": "1"
+    },
+    "100": {
+        "Q": "After the political party lost several local elections, supporters of the political party ______ the chair to carry out a series of reforms and transformations.",
+        "A": "urge",
+        "B": "forbid",
+        "C": "blame",
+        "D": "threaten",
+        "Correct": "A",
+        "year": "111",
+        "no": "1"
+    },
+    "101": {
+        "Q": "Judy has a great talent for music; she can ______ a new song in only a couple of hours.",
+        "A": "access",
+        "B": "compose",
+        "C": "maintain",
+        "D": "occupy",
+        "Correct": "B",
+        "year": "111",
+        "no": "2"
+    },
+    "102": {
+        "Q": "The management team decided to hold a(n) ______ meeting at the nearby cafe, and there won't be any dress codes.",
+        "A": "protective",
+        "B": "informal",
+        "C": "ignorant",
+        "D": "attentive",
+        "Correct": "B",
+        "year": "111",
+        "no": "2"
+    },
+    "103": {
+        "Q": "I didn't ______ my high school classmate until she introduced herself to me at the meeting.",
+        "A": "content",
+        "B": "haunt",
+        "C": "recognize",
+        "D": "evaluate",
+        "Correct": "C",
+        "year": "111",
+        "no": "2"
+    },
+    "104": {
+        "Q": "Youngsters are often told by their parents or seniors to be ______ instead of having wild ambitions or dreams.",
+        "A": "imaginative",
+        "B": "realistic",
+        "C": "courageous",
+        "D": "suspicious",
+        "Correct": "B",
+        "year": "111",
+        "no": "2"
+    },
+    "105": {
+        "Q": "Now I am ______ penniless and broke, having spent practically all of my savings on the new house.",
+        "A": "universally",
+        "B": "rarely",
+        "C": "nearly",
+        "D": "ideally",
+        "Correct": "C",
+        "year": "111",
+        "no": "2"
+    },
+    "106": {
+        "Q": "Vivian is ______ to only one glass of sugary beverage every day, because her doctor is concerned with her sugar intake.",
+        "A": "appealed",
+        "B": "referred",
+        "C": "supplied",
+        "D": "restricted",
+        "Correct": "D",
+        "year": "111",
+        "no": "2"
+    },
+    "107": {
+        "Q": "Showing signs of ______, Michelle has a hard time making up her mind about whether to break up with her boyfriend.",
+        "A": "impression",
+        "B": "irritation",
+        "C": "formation",
+        "D": "hesitation",
+        "Correct": "D",
+        "year": "111",
+        "no": "2"
+    },
+    "108": {
+        "Q": "All the new employees will be asked to attend a training session one week before they start working, and there's no ______.",
+        "A": "exception",
+        "B": "presence",
+        "C": "appliance",
+        "D": "tension",
+        "Correct": "A",
+        "year": "111",
+        "no": "2"
+    },
+    "109": {
+        "Q": "Harris told us about a car accident with such ______ descriptions that we felt as if we had witnessed everything ourselves.",
+        "A": "vivid",
+        "B": "available",
+        "C": "defensive",
+        "D": "diverse",
+        "Correct": "A",
+        "year": "111",
+        "no": "2"
+    },
+    "110": {
+        "Q": "Generally, hard-working employees stand a better chance of ______ than lazy or irresponsible ones.",
+        "A": "promotion",
+        "B": "intention",
+        "C": "reservation",
+        "D": "confirmation",
+        "Correct": "A",
+        "year": "111",
+        "no": "2"
+    },
+    "111": {
+        "Q": "The thirteen ______ on the American flag symbolize the thirteen British colonies that gained independence from Great Britain, while the fifty stars represent the fifty states.",
+        "A": "stripes",
+        "B": "puppets",
+        "C": "quilts",
+        "D": "ribbons",
+        "Correct": "A",
+        "year": "111",
+        "no": "3"
+    },
+    "112": {
+        "Q": "After taking the pill, I felt ______ and couldn't help but lie down and get some sleep.",
+        "A": "aware",
+        "B": "brutal",
+        "C": "coarse",
+        "D": "drowsy",
+        "Correct": "D",
+        "year": "111",
+        "no": "3"
+    },
+    "113": {
+        "Q": "Despite the interruption from the protesters, the prime minister ______ with his speech.",
+        "A": "associated",
+        "B": "contrasted",
+        "C": "cooperated",
+        "D": "proceeded",
+        "Correct": "D",
+        "year": "111",
+        "no": "3"
+    },
+    "114": {
+        "Q": "Without my glasses, I could ______ see anything that the teacher wrote on the blackboard.",
+        "A": "namely",
+        "B": "shortly",
+        "C": "scarcely",
+        "D": "lately",
+        "Correct": "C",
+        "year": "111",
+        "no": "3"
+    },
+    "115": {
+        "Q": "Every night before bedtime, Elizabeth ______ down by the bed and prays for her son's recovery.",
+        "A": "fastens",
+        "B": "kneels",
+        "C": "clashes",
+        "D": "rebels",
+        "Correct": "B",
+        "year": "111",
+        "no": "3"
+    },
+    "116": {
+        "Q": "The decrease in sales was a ______ of some bad publicity about the company.",
+        "A": "revolution",
+        "B": "consequence",
+        "C": "partnership",
+        "D": "nationality",
+        "Correct": "B",
+        "year": "111",
+        "no": "3"
+    },
+    "117": {
+        "Q": "Too much ______ to the sun can speed up the aging process, so don't forget the sunblock when you go out.",
+        "A": "exposure",
+        "B": "approval",
+        "C": "anxiety",
+        "D": "atmosphere",
+        "Correct": "A",
+        "year": "111",
+        "no": "3"
+    },
+    "118": {
+        "Q": "The lack of investors has ______ the board in their efforts to expand the company.",
+        "A": "extinguished",
+        "B": "guaranteed",
+        "C": "frustrated",
+        "D": "reminded",
+        "Correct": "C",
+        "year": "111",
+        "no": "3"
+    },
+    "119": {
+        "Q": "Labradors, or guide dogs, can be very stubborn, but once trained well, they are generally very ______.",
+        "A": "inclusive",
+        "B": "obedient",
+        "C": "threatening",
+        "D": "abundant",
+        "Correct": "B",
+        "year": "111",
+        "no": "3"
+    },
+    "120": {
+        "Q": "Sometimes the store is open to bulk orders for which you can ______ a good discount.",
+        "A": "reflect",
+        "B": "gossip",
+        "C": "convince",
+        "D": "negotiate",
+        "Correct": "D",
+        "year": "111",
+        "no": "3"
+    },
+    "121": {
+        "Q": "Having lost their homes, the earthquake victims had to stay in shelters ______.",
+        "A": "sufficiently",
+        "B": "solidly",
+        "C": "slightly",
+        "D": "temporarily",
+        "Correct": "D",
+        "year": "111",
+        "no": "4"
+    },
+    "122": {
+        "Q": "If you want to go to Mt. Jade during the summer vacation, you had better make a ______ in advance as it is a very popular destination.",
+        "A": "conservation",
+        "B": "reservation",
+        "C": "preservation",
+        "D": "association",
+        "Correct": "B",
+        "year": "111",
+        "no": "4"
+    },
+    "123": {
+        "Q": "In ______ of World Refugee Day on Thursday, Lady Gaga donated $80,000 to help Ukrainian refugees.",
+        "A": "recognition",
+        "B": "admission",
+        "C": "formation",
+        "D": "vision",
+        "Correct": "A",
+        "year": "111",
+        "no": "4"
+    },
+    "124": {
+        "Q": "A sleepwalker does everything ______. He doesn't remember what he has done when he wakes up.",
+        "A": "gratefully",
+        "B": "considerately",
+        "C": "unconsciously",
+        "D": "conditionally",
+        "Correct": "C",
+        "year": "111",
+        "no": "4"
+    },
+    "125": {
+        "Q": "The captain was arrested because he ______ the ship before all the passengers had gotten off the ship safely.",
+        "A": "abandoned",
+        "B": "abounded",
+        "C": "amused",
+        "D": "arranged",
+        "Correct": "A",
+        "year": "111",
+        "no": "4"
+    },
+    "126": {
+        "Q": "It was difficult to ______ the bodies of the victims because they had been blackened by fire.",
+        "A": "convince",
+        "B": "distribute",
+        "C": "identify",
+        "D": "associate",
+        "Correct": "C",
+        "year": "111",
+        "no": "4"
+    },
+    "127": {
+        "Q": "Having been sick for several days, he had no ______ for greasy food.",
+        "A": "arrangement",
+        "B": "appetite",
+        "C": "advance",
+        "D": "attainment",
+        "Correct": "B",
+        "year": "111",
+        "no": "4"
+    },
+    "128": {
+        "Q": "In this movie theater, people are not ______ to smoke or eat inside. Those who don't follow the rule will have to be asked out.",
+        "A": "inclined",
+        "B": "acquired",
+        "C": "retained",
+        "D": "permitted",
+        "Correct": "D",
+        "year": "111",
+        "no": "4"
+    },
+    "129": {
+        "Q": "With great performance, Sherry has received ______ from three universities. She was very delighted.",
+        "A": "acceptances",
+        "B": "demonstrations",
+        "C": "hurdles",
+        "D": "detentions",
+        "Correct": "A",
+        "year": "111",
+        "no": "4"
+    },
+    "130": {
+        "Q": "Keven tends to be cold and never seems to be ______ to those suffering misfortunes or encountering disasters.",
+        "A": "competitive",
+        "B": "sympathetic",
+        "C": "adequate",
+        "D": "resistant",
+        "Correct": "B",
+        "year": "111",
+        "no": "4"
+    },
+    "131": {
+        "Q": "Stop ______ up and down on the couch; you might fall and injure yourself.",
+        "A": "charging",
+        "B": "dashing",
+        "C": "flipping",
+        "D": "bouncing",
+        "Correct": "D",
+        "year": "111",
+        "no": "1"
+    },
+    "132": {
+        "Q": "Sensing the obvious hostility in the room, Jack told a joke to ______ the tension.",
+        "A": "extend",
+        "B": "compose",
+        "C": "relieve",
+        "D": "submit",
+        "Correct": "C",
+        "year": "111",
+        "no": "1"
+    },
+    "133": {
+        "Q": "After losing to their opponents by three points, the school team hung their heads in ______.",
+        "A": "cooperation",
+        "B": "victory",
+        "C": "morality",
+        "D": "defeat",
+        "Correct": "D",
+        "year": "111",
+        "no": "1"
+    },
+    "134": {
+        "Q": "Eric ______ his colleague of stealing his ideas of the new product, but he couldn't provide any proof for his allegations.",
+        "A": "accused",
+        "B": "informed",
+        "C": "committed",
+        "D": "exposed",
+        "Correct": "A",
+        "year": "111",
+        "no": "1"
+    },
+    "135": {
+        "Q": "In 1969, European leaders set about creating a single ______, hoping by saving the costs of exchanging money, there will be more trades and travel within Europe.",
+        "A": "currency",
+        "B": "privacy",
+        "C": "frequency",
+        "D": "theory",
+        "Correct": "A",
+        "year": "111",
+        "no": "1"
+    },
+    "136": {
+        "Q": "Penelope fell in great depression after she read those mean and ______ comments about her appearance on the Internet.",
+        "A": "nutritious",
+        "B": "vicious",
+        "C": "cautious",
+        "D": "previous",
+        "Correct": "B",
+        "year": "111",
+        "no": "1"
+    },
+    "137": {
+        "Q": "Clinical signs and history are normally enough to make a(n) ______ diagnosis of the disease. To make a further definitive confirmation, virus cultivation is needed.",
+        "A": "artificial",
+        "B": "suspicious",
+        "C": "preliminary",
+        "D": "optional",
+        "Correct": "C",
+        "year": "111",
+        "no": "1"
+    },
+    "138": {
+        "Q": "Becky has been trying to ______ remind her boyfriend that their anniversary is next week, but he doesn't seem to take the hint.",
+        "A": "subtly",
+        "B": "similarly",
+        "C": "visually",
+        "D": "jointly",
+        "Correct": "A",
+        "year": "111",
+        "no": "1"
+    },
+    "139": {
+        "Q": "The lawyer's ______ innocent question was in fact carefully planned to mislead the witness to say something unintended.",
+        "A": "literally",
+        "B": "crucially",
+        "C": "remarkably",
+        "D": "seemingly",
+        "Correct": "D",
+        "year": "111",
+        "no": "1"
+    },
+    "140": {
+        "Q": "Serial numbers became commonplace after the United States passed the Gun Control Act of 1968, which ______ that all guns manufactured in or imported into the country have a serial number.",
+        "A": "conveyed",
+        "B": "required",
+        "C": "invented",
+        "D": "responded",
+        "Correct": "B",
+        "year": "111",
+        "no": "1"
+    },
+    "141": {
+        "Q": "It is necessary for construction companies to ______ their building plans to the city council for approval.",
+        "A": "submit",
+        "B": "secure",
+        "C": "steer",
+        "D": "sustain",
+        "Correct": "A",
+        "year": "112",
+        "no": "1"
+    },
+    "142": {
+        "Q": "There was ______ evidence showing that this man was guilty, so he was eventually arrested and put in jail.",
+        "A": "delicate",
+        "B": "hollow",
+        "C": "mechanical",
+        "D": "abundant",
+        "Correct": "D",
+        "year": "112",
+        "no": "1"
+    },
+    "143": {
+        "Q": "The manager has no ______ for improper behavior in the workplace, and holds his staff members accountable for their own actions.",
+        "A": "hesitation",
+        "B": "tolerance",
+        "C": "collaboration",
+        "D": "distinction",
+        "Correct": "B",
+        "year": "112",
+        "no": "1"
+    },
+    "144": {
+        "Q": "The train stopped ______ without warning, causing quite a few passengers to fall off their seats.",
+        "A": "initially",
+        "B": "consciously",
+        "C": "abruptly",
+        "D": "precisely",
+        "Correct": "C",
+        "year": "112",
+        "no": "1"
+    },
+    "145": {
+        "Q": "No country can accept any attempts by other nations to ______ in its domestic affairs and manipulate its elections.",
+        "A": "modify",
+        "B": "interfere",
+        "C": "endeavor",
+        "D": "resemble",
+        "Correct": "B",
+        "year": "112",
+        "no": "1"
+    },
+    "146": {
+        "Q": "We should avoid using cellphones in dim light for too long, which could cause ______ eye damage that cannot be reversed.",
+        "A": "efficient",
+        "B": "reckless",
+        "C": "permanent",
+        "D": "compulsory",
+        "Correct": "C",
+        "year": "112",
+        "no": "1"
+    },
+    "147": {
+        "Q": "Jacob has an uncontrollable ______ about cleanliness and cannot stand anyone messing up the house.",
+        "A": "obsession",
+        "B": "catastrophe",
+        "C": "fertilizer",
+        "D": "convention",
+        "Correct": "A",
+        "year": "112",
+        "no": "1"
+    },
+    "148": {
+        "Q": "The company was accused of ______ against a female employee, who received unequal pay for the same work done by her male colleagues.",
+        "A": "discriminating",
+        "B": "campaigning",
+        "C": "negotiating",
+        "D": "prohibiting",
+        "Correct": "A",
+        "year": "112",
+        "no": "1"
+    },
+    "149": {
+        "Q": "The organization operates ______ for charitable purposes. All its efforts are directed toward helping people in need.",
+        "A": "automatically",
+        "B": "swiftly",
+        "C": "furiously",
+        "D": "exclusively",
+        "Correct": "D",
+        "year": "112",
+        "no": "1"
+    },
+    "150": {
+        "Q": "During the COVID-19 pandemic, people were required to observe necessary ______ against the virus to stay safe and keep it from spreading.",
+        "A": "circulations",
+        "B": "precautions",
+        "C": "obligations",
+        "D": "commitments",
+        "Correct": "B",
+        "year": "112",
+        "no": "1"
+    },
+    "151": {
+        "Q": "In the final ______ of the soap opera, the true identity of the serial killer will be revealed.",
+        "A": "reunion",
+        "B": "principle",
+        "C": "facility",
+        "D": "scene",
+        "Correct": "D",
+        "year": "112",
+        "no": "1"
+    },
+    "152": {
+        "Q": "The young girl handled the emergency as calmly as an adult. She was quite ______ for her age.",
+        "A": "identical",
+        "B": "mature",
+        "C": "innocent",
+        "D": "imaginable",
+        "Correct": "B",
+        "year": "112",
+        "no": "1"
+    },
+    "153": {
+        "Q": "The customs on that island are ______. Nowhere else can you find any other one similar to them.",
+        "A": "unique",
+        "B": "identical",
+        "C": "stressful",
+        "D": "voluntary",
+        "Correct": "A",
+        "year": "112",
+        "no": "1"
+    },
+    "154": {
+        "Q": "What really helps us improve is not emotional comments and complaints but ______ criticism.",
+        "A": "constructive",
+        "B": "passive",
+        "C": "cultural",
+        "D": "miserable",
+        "Correct": "A",
+        "year": "112",
+        "no": "1"
+    },
+    "155": {
+        "Q": "Of all the methods she has tried in an effort to ______ her students, the teacher found material rewards and extra points most effective.",
+        "A": "fascinate",
+        "B": "transfer",
+        "C": "motivate",
+        "D": "multiply",
+        "Correct": "C",
+        "year": "112",
+        "no": "1"
+    },
+    "156": {
+        "Q": "During the festival, many vehicles will pack into the city and ______ the traffic.",
+        "A": "fasten",
+        "B": "block",
+        "C": "promote",
+        "D": "relieve",
+        "Correct": "B",
+        "year": "112",
+        "no": "1"
+    },
+    "157": {
+        "Q": "The victim suffered ______ brain damage as a result of the accident, which led to lifelong physical disabilities.",
+        "A": "financial",
+        "B": "prominent",
+        "C": "permanent",
+        "D": "liberal",
+        "Correct": "C",
+        "year": "112",
+        "no": "1"
+    },
+    "158": {
+        "Q": "Amy is a determined person who would remove every ______ that keeps her from achieving her goal.",
+        "A": "obstacle",
+        "B": "landmark",
+        "C": "potential",
+        "D": "element",
+        "Correct": "A",
+        "year": "112",
+        "no": "1"
+    },
+    "159": {
+        "Q": "Most backpackers like to visit countries where the public ______ is well-developed.",
+        "A": "decoration",
+        "B": "exposure",
+        "C": "demonstration",
+        "D": "transportation",
+        "Correct": "D",
+        "year": "112",
+        "no": "1"
+    },
+    "160": {
+        "Q": "With all the runners equally outstanding, the race was so ______ that no one dared to guess the final outcome.",
+        "A": "dizzy",
+        "B": "competitive",
+        "C": "opposite",
+        "D": "sufficient",
+        "Correct": "B",
+        "year": "112",
+        "no": "1"
+    },
+    "161": {
+        "Q": "I felt instant ______ as soon as I handed in my report. Now I can finally get a good night’s sleep.",
+        "A": "breath",
+        "B": "sense",
+        "C": "relief",
+        "D": "quality",
+        "Correct": "C",
+        "year": "112",
+        "no": "2"
+    },
+    "162": {
+        "Q": "There is only ______ difference between the two designs. In fact, most people have trouble telling them apart.",
+        "A": "excess",
+        "B": "plain",
+        "C": "slight",
+        "D": "proper",
+        "Correct": "C",
+        "year": "112",
+        "no": "2"
+    },
+    "163": {
+        "Q": "With plenty of work left to do, Mark ______ put off a reunion dinner with his high school classmates to a later date.",
+        "A": "additionally",
+        "B": "generally",
+        "C": "respectively",
+        "D": "reluctantly",
+        "Correct": "D",
+        "year": "112",
+        "no": "2"
+    },
+    "164": {
+        "Q": "Making rude or offensive ______ on the Internet is likely to get you into legal trouble these days.",
+        "A": "punches",
+        "B": "approvals",
+        "C": "remarks",
+        "D": "portions",
+        "Correct": "C",
+        "year": "112",
+        "no": "2"
+    },
+    "165": {
+        "Q": "The company did a lot of surveys to better ______ their target customers, that is, to know who is more likely to buy their products.",
+        "A": "define",
+        "B": "contain",
+        "C": "launch",
+        "D": "promote",
+        "Correct": "A",
+        "year": "112",
+        "no": "2"
+    },
+    "166": {
+        "Q": "Even after decades, I still have ______ memories of the day I graduated from high school as if it were yesterday.",
+        "A": "bright",
+        "B": "normal",
+        "C": "present",
+        "D": "vivid",
+        "Correct": "D",
+        "year": "112",
+        "no": "2"
+    },
+    "167": {
+        "Q": "By means of repetition and exaggerated gestures, Judy ______ how we could improve sales during her short speech.",
+        "A": "highlighted",
+        "B": "intented",
+        "C": "imported",
+        "D": "sustained",
+        "Correct": "A",
+        "year": "112",
+        "no": "2"
+    },
+    "168": {
+        "Q": "We didn’t expect him to come up with the solution in such a short time, but now his ______ has impressed all of us.",
+        "A": "brilliance",
+        "B": "obstacle",
+        "C": "persuation",
+        "D": "substance",
+        "Correct": "A",
+        "year": "112",
+        "no": "2"
+    },
+    "169": {
+        "Q": "He became quite ______ after I turned down his invitation, and we hardly talk these days.",
+        "A": "guilty",
+        "B": "distant",
+        "C": "practical",
+        "D": "optimistic",
+        "Correct": "B",
+        "year": "112",
+        "no": "2"
+    },
+    "170": {
+        "Q": "Workers ______ the heavy machinery are reminded not to drink alcohol or take medication that may make them drowsy before work.",
+        "A": "operating",
+        "B": "founding",
+        "C": "proposing",
+        "D": "reserving",
+        "Correct": "A",
+        "year": "112",
+        "no": "2"
+    },
+    "171": {
+        "Q": "A South African entrepreneur began a rhino breeding project decades ago and so far has ______ to increase his stock of the animals.",
+        "A": "admitted",
+        "B": "dared",
+        "C": "surrendered",
+        "D": "managed",
+        "Correct": "D",
+        "year": "112",
+        "no": "3"
+    },
+    "172": {
+        "Q": "In a study that examined the effects of extreme ______ and deprivation on physical and mental health, an athlete volunteered to live in solitude in a cave 70 meters deep for three weeks.",
+        "A": "inhabitant",
+        "B": "hostility",
+        "C": "isolation",
+        "D": "indifference",
+        "Correct": "C",
+        "year": "112",
+        "no": "3"
+    },
+    "173": {
+        "Q": "Scientists have discovered that plants emit sounds when they are stressed, but the sounds are at too high a ______ for the human ear to pick up.",
+        "A": "foundation",
+        "B": "frequency",
+        "C": "framework",
+        "D": "feedback",
+        "Correct": "B",
+        "year": "112",
+        "no": "3"
+    },
+    "174": {
+        "Q": "A team of researchers found that forgetting no-longer-relevant information is beneficial as it keeps the brain working ______.",
+        "A": "smoothly",
+        "B": "roughly",
+        "C": "generally",
+        "D": "primarily",
+        "Correct": "A",
+        "year": "112",
+        "no": "3"
+    },
+    "175": {
+        "Q": "Despite the beauty of the emerging buds signaling the arrival of spring, many people ______ this annual phenomenon due to the seasonal allergies it brings, such as hay fever.",
+        "A": "extend",
+        "B": "cripple",
+        "C": "dread",
+        "D": "deserve",
+        "Correct": "C",
+        "year": "112",
+        "no": "3"
+    },
+    "176": {
+        "Q": "This species of bird is becoming increasingly ______, so a new law to protect these birds is to be introduced to prevent them from becoming extinct.",
+        "A": "realistic",
+        "B": "rare",
+        "C": "exclusive",
+        "D": "intense",
+        "Correct": "B",
+        "year": "112",
+        "no": "3"
+    },
+    "177": {
+        "Q": "The National Federation of Teachers Unions is urging the government to abandon its bilingual nation policy for Taiwan by 2030, for this plan ______ with Taiwan’s test-oriented system.",
+        "A": "corresponds",
+        "B": "cooperates",
+        "C": "coincides",
+        "D": "clashes",
+        "Correct": "D",
+        "year": "112",
+        "no": "3"
+    },
+    "178": {
+        "Q": "Before deciding on the purchase, Ken conducted a thorough ______ of the car, examining its exterior as well as its interior, leaving no detail unnoticed.",
+        "A": "inspection",
+        "B": "introduction",
+        "C": "invasion",
+        "D": "indication",
+        "Correct": "A",
+        "year": "112",
+        "no": "3"
+    },
+    "179": {
+        "Q": "On the night before the piano recital, Jane practiced ______, playing the same piece over and over again until she mastered it.",
+        "A": "collectively",
+        "B": "continuously",
+        "C": "conservatively",
+        "D": "consistently",
+        "Correct": "B",
+        "year": "112",
+        "no": "3"
+    },
+    "180": {
+        "Q": "With her morning swim ______ disrupted by the pandemic, Lisa, in her 60s, took to weight training and has participated in several competitions so far.",
+        "A": "response",
+        "B": "route",
+        "C": "routine",
+        "D": "resort",
+        "Correct": "C",
+        "year": "112",
+        "no": "3"
+    },
+    "181": {
+        "Q": "SpaceX’s pioneering achievements in rocket technology have positioned them on the _____ of revolutionizing space exploration and commercial space travel.",
+        "A": "venture",
+        "B": "missionary",
+        "C": "threshold",
+        "D": "investigation",
+        "Correct": "C",
+        "year": "112",
+        "no": "1"
+    },
+    "182": {
+        "Q": "Even with such easy access to international news, not a few people are surprisingly _____ of what is going on outside their country.",
+        "A": "ignorant",
+        "B": "conscious",
+        "C": "confident",
+        "D": "tolerant",
+        "Correct": "A",
+        "year": "112",
+        "no": "1"
+    },
+    "183": {
+        "Q": "The busy corner in the downtown area is a _____ place for a restaurant. A big shopping mall will be open soon, which will surely boost the business.",
+        "A": "privileged",
+        "B": "desirable",
+        "C": "recreational",
+        "D": "particular",
+        "Correct": "B",
+        "year": "112",
+        "no": "1"
+    },
+    "184": {
+        "Q": "The students organized a campaign to _____ the school administration to extend library hours, highlighting the benefits of increased access to resources.",
+        "A": "oppose",
+        "B": "debate",
+        "C": "lobby",
+        "D": "issue",
+        "Correct": "C",
+        "year": "112",
+        "no": "1"
+    },
+    "185": {
+        "Q": "All the critics reviewed the newly-released musicals _____. The wonderful scenes, beautiful melodies and professional performance impressed everyone.",
+        "A": "externally",
+        "B": "favorably",
+        "C": "reluctantly",
+        "D": "sensibly",
+        "Correct": "B",
+        "year": "112",
+        "no": "1"
+    },
+    "186": {
+        "Q": "The teacher _____ the research paper, citing from it that the key to successful classroom management is “leaving no child behind.”",
+        "A": "assigned",
+        "B": "converted",
+        "C": "reminded",
+        "D": "echoed",
+        "Correct": "D",
+        "year": "112",
+        "no": "1"
+    },
+    "187": {
+        "Q": "The war between Ukraine and Russia can only come to an end if both sides are willing to demonstrate _____ and meet halfway at the negotiating table.",
+        "A": "substance",
+        "B": "permission",
+        "C": "flexibility",
+        "D": "violence",
+        "Correct": "C",
+        "year": "112",
+        "no": "1"
+    },
+    "188": {
+        "Q": "During the economic recession, those unemployed workers were working part-time on a(n) _____ basis, but in the long run, they hoped to find permanent and stable jobs to make a living.",
+        "A": "acceptable",
+        "B": "consistent",
+        "C": "financial",
+        "D": "temporary",
+        "Correct": "D",
+        "year": "112",
+        "no": "1"
+    },
+    "189": {
+        "Q": "A skilled journalist knows how to _____ facts into a story in a way that is both informative and engaging for readers.",
+        "A": "seize",
+        "B": "weave",
+        "C": "identify",
+        "D": "exchange",
+        "Correct": "B",
+        "year": "112",
+        "no": "1"
+    },
+    "190": {
+        "Q": "The moment Shrek and Fiona locked eyes across the room, the intense _____ between them was undeniable, drawing them towards each other like magnets.",
+        "A": "chemistry",
+        "B": "association",
+        "C": "gravity",
+        "D": "devotion",
+        "Correct": "A",
+        "year": "112",
+        "no": "1"
+    },
+    "191": {
+        "Q": "The restaurant is so popular that we must _____ a table several months in advance.",
+        "A": "announce",
+        "B": "present",
+        "C": "propose",
+        "D": "reserve",
+        "Correct": "D",
+        "year": "113",
+        "no": "1"
+    },
+    "192": {
+        "Q": "The cake tasted much better than we had thought; it definitely went beyond our _____.",
+        "A": "expectations",
+        "B": "expansions",
+        "C": "intentions",
+        "D": "definitions",
+        "Correct": "A",
+        "year": "113",
+        "no": "1"
+    },
+    "193": {
+        "Q": "Judy goes shopping only out of _____ and always manages her monthly budget wisely.",
+        "A": "ambition",
+        "B": "impulse",
+        "C": "necessity",
+        "D": "elegance",
+        "Correct": "B",
+        "year": "113",
+        "no": "1"
+    },
+    "194": {
+        "Q": "Ben is obviously eager to _____ everyone, since he never turns down anyone and always does everything as he is told.",
+        "A": "annoy",
+        "B": "please",
+        "C": "suspect",
+        "D": "excuse",
+        "Correct": "B",
+        "year": "113",
+        "no": "1"
+    },
+    "195": {
+        "Q": "I've got a(n) _____ stomach from the raw seafood last night and keep having to go to the toilet every few minutes.",
+        "A": "heavy",
+        "B": "light",
+        "C": "tough",
+        "D": "upset",
+        "Correct": "D",
+        "year": "113",
+        "no": "1"
+    },
+    "196": {
+        "Q": "His brave deeds were really _____ considering the various potential dangers and risks.",
+        "A": "admirable",
+        "B": "official",
+        "C": "tempting",
+        "D": "definite",
+        "Correct": "A",
+        "year": "113",
+        "no": "1"
+    },
+    "197": {
+        "Q": "Even if you aren’t satisfied with the test result, I’m sure you will perform better on your second _____.",
+        "A": "attempt",
+        "B": "position",
+        "C": "release",
+        "D": "status",
+        "Correct": "A",
+        "year": "113",
+        "no": "1"
+    },
+    "198": {
+        "Q": "Sam considers himself _____ to his peers because he seldom performs as well as they do academically.",
+        "A": "credible",
+        "B": "vulnerable",
+        "C": "inferior",
+        "D": "identical",
+        "Correct": "C",
+        "year": "113",
+        "no": "1"
+    },
+    "199": {
+        "Q": "This dessert is meant to be enjoyed in small bites, not _____ whole all at once.",
+        "A": "displayed",
+        "B": "packaged",
+        "C": "steamed",
+        "D": "swallowed",
+        "Correct": "D",
+        "year": "113",
+        "no": "1"
+    },
+    "200": {
+        "Q": "The earthquake shook the buildings _____, causing panic among the unprepared residents.",
+        "A": "highly",
+        "B": "openly",
+        "C": "broadly",
+        "D": "violently",
+        "Correct": "D",
+        "year": "113",
+        "no": "1"
+    },
+    "201": {
+        "Q": "After studying diligently for weeks, Emily felt confident that she had acquired ______ knowledge to pass the exam successfully.",
+        "A": "countless",
+        "B": "efficient",
+        "C": "sufficient",
+        "D": "precautious",
+        "Correct": "C",
+        "year": "113",
+        "no": "2"
+    },
+    "202": {
+        "Q": "Jacob submitted his job ______ online and eagerly awaited a response, hoping to hear back from the company soon.",
+        "A": "education",
+        "B": "relation",
+        "C": "subscription",
+        "D": "application",
+        "Correct": "D",
+        "year": "113",
+        "no": "2"
+    },
+    "203": {
+        "Q": "The company has to ______ unnecessary expenses if it wishes to increase profits.",
+        "A": "refresh",
+        "B": "treat",
+        "C": "ignore",
+        "D": "eliminate",
+        "Correct": "D",
+        "year": "113",
+        "no": "2"
+    },
+    "204": {
+        "Q": "After the surgery, the patient's condition worsened ______, prompting the medical team to reassess and adjust the treatment urgently.",
+        "A": "unexpectedly",
+        "B": "conventionally",
+        "C": "effectively",
+        "D": "previously",
+        "Correct": "A",
+        "year": "113",
+        "no": "2"
+    },
+    "205": {
+        "Q": "The ______ between maintaining tradition and pursuing economic growth has been a heatedly debated issue in many cultural discussions.",
+        "A": "addict",
+        "B": "conflict",
+        "C": "influence",
+        "D": "function",
+        "Correct": "B",
+        "year": "113",
+        "no": "2"
+    },
+    "206": {
+        "Q": "Health officials are urging people to get vaccinated as soon as possible to reduce the risk of being ______ with the seasonal flu.",
+        "A": "affected",
+        "B": "infected",
+        "C": "detected",
+        "D": "selected",
+        "Correct": "B",
+        "year": "113",
+        "no": "2"
+    },
+    "207": {
+        "Q": "The Lin family enjoyed spending time together doing ______ chores on weekends like cleaning, cooking, and gardening.",
+        "A": "physical",
+        "B": "domestic",
+        "C": "durable",
+        "D": "genuine",
+        "Correct": "B",
+        "year": "113",
+        "no": "2"
+    },
+    "208": {
+        "Q": "Stella knows how important it is to stay connected, so she always keeps her phone charger ______ in her bag in case the battery runs low.",
+        "A": "handy",
+        "B": "suitable",
+        "C": "remarkable",
+        "D": "apparent",
+        "Correct": "A",
+        "year": "113",
+        "no": "2"
+    },
+    "209": {
+        "Q": "Out of love, parents sometimes go to ______ to protect their children, doing everything they can to keep them safe and secure.",
+        "A": "contacts",
+        "B": "cells",
+        "C": "extremes",
+        "D": "yards",
+        "Correct": "C",
+        "year": "113",
+        "no": "2"
+    },
+    "210": {
+        "Q": "After several famous Korean idols chose to ______ suicide, there has been an increased awareness of the need for mental health support within the K-pop community.",
+        "A": "organize",
+        "B": "judge",
+        "C": "direct",
+        "D": "commit",
+        "Correct": "D",
+        "year": "113",
+        "no": "2"
+    },
+    "211": {
+        "Q": "Max did a good job of ______ his speech this morning; a lot of us were moved to tears by his heartfelt words and powerful message.",
+        "A": "advising",
+        "B": "delivering",
+        "C": "capturing",
+        "D": "recalling",
+        "Correct": "B",
+        "year": "113",
+        "no": "3"
+    },
+    "212": {
+        "Q": "Experts examined the building blueprint carefully to make sure the structure can ______ strong winds and earthquakes.",
+        "A": "approve",
+        "B": "conceal",
+        "C": "sprinkle",
+        "D": "withstand",
+        "Correct": "D",
+        "year": "113",
+        "no": "3"
+    },
+    "213": {
+        "Q": "As someone who thrives on ______ challenges, Oman quit his job last week because the work was boring and repetitive.",
+        "A": "blank",
+        "B": "novel",
+        "C": "vacant",
+        "D": "ethical",
+        "Correct": "B",
+        "year": "113",
+        "no": "3"
+    },
+    "214": {
+        "Q": "Provided with ______ details of the criminal's facial features, the sketch artist was able to create a drawing to help the public look for him.",
+        "A": "demanding",
+        "B": "prompt",
+        "C": "specific",
+        "D": "earnest",
+        "Correct": "C",
+        "year": "113",
+        "no": "3"
+    },
+    "215": {
+        "Q": "Judy has ______ confidence in her project and has no doubt that she will win first prize eventually.",
+        "A": "absolute",
+        "B": "logical",
+        "C": "tolerant",
+        "D": "intimate",
+        "Correct": "A",
+        "year": "113",
+        "no": "3"
+    },
+    "216": {
+        "Q": "Your theory may not apply ______ since it overlooks cultural and regional differences in other countries.",
+        "A": "shallowly",
+        "B": "critically",
+        "C": "conversely",
+        "D": "universally",
+        "Correct": "D",
+        "year": "113",
+        "no": "3"
+    },
+    "217": {
+        "Q": "The security guards checked our bags to make sure they didn't contain any ______ items like guns or knives.",
+        "A": "prohibited",
+        "B": "disturbed",
+        "C": "submitted",
+        "D": "enclosed",
+        "Correct": "A",
+        "year": "113",
+        "no": "3"
+    },
+    "218": {
+        "Q": "It is nearly impossible to make the ______ between the two designs since they resemble each other closely.",
+        "A": "impression",
+        "B": "distinction",
+        "C": "association",
+        "D": "imitation",
+        "Correct": "B",
+        "year": "113",
+        "no": "3"
+    },
+    "219": {
+        "Q": "Showing strong ______ to win, Cory is determined to persist till the very end of the competition.",
+        "A": "disorder",
+        "B": "elegance",
+        "C": "resolution",
+        "D": "commitment",
+        "Correct": "C",
+        "year": "113",
+        "no": "3"
+    },
+    "220": {
+        "Q": "Vincent has got used to a life of ______, which is why he was upset when I asked him to wait in line like everyone else.",
+        "A": "instinct",
+        "B": "privilege",
+        "C": "triumph",
+        "D": "tendency",
+        "Correct": "B",
+        "year": "113",
+        "no": "3"
+    },
+    "221": {
+        "Q": "The teacher's strict look was enough to ______ the misbehaving students into silence.",
+        "A": "intimidate",
+        "B": "persuade",
+        "C": "encourage",
+        "D": "console",
+        "Correct": "A",
+        "year": "113",
+        "no": "4"
+    },
+    "222": {
+        "Q": "According to the news, an ______ 300 Taiwanese victims have been tricked into working for job scams in Cambodia this year.",
+        "A": "enormous",
+        "B": "estimated",
+        "C": "ethical",
+        "D": "enlightening",
+        "Correct": "B",
+        "year": "113",
+        "no": "4"
+    },
+    "223": {
+        "Q": "The community showed great ______ for the victims of the natural disaster by organizing relief efforts and donations.",
+        "A": "sympathy",
+        "B": "indifference",
+        "C": "endurance",
+        "D": "hostility",
+        "Correct": "A",
+        "year": "113",
+        "no": "4"
+    },
+    "224": {
+        "Q": "Due to unexpected ______, the train was delayed for over an hour, causing inconvenience to the passengers and disrupting their travel plans.",
+        "A": "endeavors",
+        "B": "accumulations",
+        "C": "circumstances",
+        "D": "rehearsals",
+        "Correct": "C",
+        "year": "113",
+        "no": "4"
+    },
+    "225": {
+        "Q": "The college graduate decided to ______ her application from the job position after receiving a better offer from another company.",
+        "A": "revise",
+        "B": "obtain",
+        "C": "propose",
+        "D": "withdraw",
+        "Correct": "D",
+        "year": "113",
+        "no": "4"
+    },
+    "226": {
+        "Q": "Adam was thrilled to find a(n) ______ antique watch at the flea market, carefully crafted with delicate details.",
+        "A": "accurate",
+        "B": "authentic",
+        "C": "relevant",
+        "D": "comparative",
+        "Correct": "B",
+        "year": "113",
+        "no": "4"
+    },
+    "227": {
+        "Q": "As Jane talked about her promising new project with strong passion, Jeremy couldn't help but notice the ______ in her eyes.",
+        "A": "despair",
+        "B": "contempt",
+        "C": "outrage",
+        "D": "sparkle",
+        "Correct": "D",
+        "year": "113",
+        "no": "4"
+    },
+    "228": {
+        "Q": "The team achieved ______ success in the competition, thanks to their strategic planning and great teamwork, which allowed them to win the championship.",
+        "A": "intensive",
+        "B": "partial",
+        "C": "tremendous",
+        "D": "vigorous",
+        "Correct": "C",
+        "year": "113",
+        "no": "4"
+    },
+    "229": {
+        "Q": "Regular exercise and a balanced diet can help ______ excess weight and improve overall health.",
+        "A": "accomplish",
+        "B": "eliminate",
+        "C": "acquire",
+        "D": "explode",
+        "Correct": "B",
+        "year": "113",
+        "no": "4"
+    },
+    "230": {
+        "Q": "Speeding and driving ______, the man should undoubtedly take full responsibility for the severe car accident.",
+        "A": "recklessly",
+        "B": "cautiously",
+        "C": "dominantly",
+        "D": "spontaneously",
+        "Correct": "A",
+        "year": "113",
+        "no": "4"
+    },
+    "231": {
+        "Q": "I felt rather ______ after walking into the wrong classroom, but luckily the teacher kindly directed me to the right one.",
+        "A": "ambitious",
+        "B": "awkward",
+        "C": "available",
+        "D": "admirable",
+        "Correct": "B",
+        "year": "113",
+        "no": "1"
+    },
+    "232": {
+        "Q": "It's easy to ______ small details in a tight schedule, so take time to ensure nothing important is missed.",
+        "A": "discover",
+        "B": "indicate",
+        "C": "overlook",
+        "D": "handle",
+        "Correct": "C",
+        "year": "113",
+        "no": "1"
+    },
+    "233": {
+        "Q": "Celebrating the ______ of others instead of focusing on their weaknesses creates a positive and supportive environment.",
+        "A": "ceremonies",
+        "B": "directions",
+        "C": "influences",
+        "D": "strengths",
+        "Correct": "D",
+        "year": "113",
+        "no": "1"
+    },
+    "234": {
+        "Q": "Watching a movie with friends is always ______; it creates happy memories and shared experiences.",
+        "A": "delightful",
+        "B": "numerous",
+        "C": "regular",
+        "D": "violent",
+        "Correct": "A",
+        "year": "113",
+        "no": "1"
+    },
+    "235": {
+        "Q": "Driven by anger and disgust, she ______ the man who dared to say something so offensive to her.",
+        "A": "punched",
+        "B": "bandaged",
+        "C": "threaded",
+        "D": "vanished",
+        "Correct": "A",
+        "year": "113",
+        "no": "1"
+    },
+    "236": {
+        "Q": "Luckily, the ______ in the gas pipe was detected early enough and dealt with, thus preventing a possible explosion.",
+        "A": "margin",
+        "B": "trace",
+        "C": "drain",
+        "D": "leak",
+        "Correct": "D",
+        "year": "113",
+        "no": "1"
+    },
+    "237": {
+        "Q": "She is clearly moved by his profession of love, for her eyes are ______ with tears.",
+        "A": "hollow",
+        "B": "moist",
+        "C": "drowsy",
+        "D": "fierce",
+        "Correct": "B",
+        "year": "113",
+        "no": "1"
+    },
+    "238": {
+        "Q": "When the champion raised his gold medal to the deafening cheers of the spectators, he was all smiles and ______ with pride.",
+        "A": "beaming",
+        "B": "weeding",
+        "C": "hatching",
+        "D": "adopting",
+        "Correct": "A",
+        "year": "113",
+        "no": "1"
+    },
+    "239": {
+        "Q": "In the new phone, the camera is an outstanding ______, capturing clear and vibrant photos effortlessly.",
+        "A": "burden",
+        "B": "concern",
+        "C": "feature",
+        "D": "gesture",
+        "Correct": "C",
+        "year": "113",
+        "no": "1"
+    },
+    "240": {
+        "Q": "With more than twenty million residents, the Tokyo metropolis is one of the most ______ populated areas in the world.",
+        "A": "stiffly",
+        "B": "visibly",
+        "C": "remotely",
+        "D": "densely",
+        "Correct": "D",
+        "year": "113",
+        "no": "1"
+    },
+    "241": {
+        "Q": "College admissions have faced criticism for their unclear ______ methods. Some wonder why certain students are accepted while others with similar qualifications are not.",
+        "A": "management",
+        "B": "education",
+        "C": "selection",
+        "D": "requirement",
+        "Correct": "C",
+        "year": "113",
+        "no": "2"
+    },
+    "242": {
+        "Q": "Out of programmed loyalty, this household robot is designed to be ______ to its owner's voice commands.",
+        "A": "allergic",
+        "B": "reluctant",
+        "C": "obedient",
+        "D": "resistant",
+        "Correct": "C",
+        "year": "113",
+        "no": "2"
+    },
+    "243": {
+        "Q": "During the online live streaming, a pet cat suddenly jumped onto the youtuber's head and ______ the show.",
+        "A": "neglected",
+        "B": "interrupted",
+        "C": "awakened",
+        "D": "exaggerated",
+        "Correct": "B",
+        "year": "113",
+        "no": "2"
+    },
+    "244": {
+        "Q": "Beating the visiting team 32-0 and claiming a comfortable ______, the home team made it to the basketball final with ease.",
+        "A": "attempt",
+        "B": "frustration",
+        "C": "miracle",
+        "D": "victory",
+        "Correct": "D",
+        "year": "113",
+        "no": "2"
+    },
+    "245": {
+        "Q": "There are too many stars in the universe. It is impossible to count the ______ number of them.",
+        "A": "plain",
+        "B": "exact",
+        "C": "absent",
+        "D": "humble",
+        "Correct": "B",
+        "year": "113",
+        "no": "2"
+    },
+    "246": {
+        "Q": "My parents started as friends, and gradually their friendship ______ to romance.",
+        "A": "progressed",
+        "B": "emerged",
+        "C": "multiplied",
+        "D": "trailed",
+        "Correct": "A",
+        "year": "113",
+        "no": "2"
+    },
+    "247": {
+        "Q": "You can overcome your stage ______ through constant practice. The more familiar you are with your performance, the less nervous you will be.",
+        "A": "crew",
+        "B": "mood",
+        "C": "fright",
+        "D": "branch",
+        "Correct": "C",
+        "year": "113",
+        "no": "2"
+    },
+    "248": {
+        "Q": "Kenny used to be pretty ______ in his job, but now he has learned how to handle the tasks in his profession.",
+        "A": "mean",
+        "B": "green",
+        "C": "even",
+        "D": "bright",
+        "Correct": "B",
+        "year": "113",
+        "no": "2"
+    },
+    "249": {
+        "Q": "Whether to install priority seats, or seats ______ for people in need, has been the subject of debate.",
+        "A": "reserved",
+        "B": "devoted",
+        "C": "occupied",
+        "D": "presented",
+        "Correct": "A",
+        "year": "113",
+        "no": "2"
+    },
+    "250": {
+        "Q": "This math question is not difficult. You can solve it ______ by using this formula.",
+        "A": "simply",
+        "B": "awfully",
+        "C": "eagerly",
+        "D": "originally",
+        "Correct": "A",
+        "year": "113",
+        "no": "2"
+    },
+    "251": {
+        "Q": "The language of the contract was ______, leading to different interpretations by the parties involved.",
+        "A": "ambiguous",
+        "B": "explicit",
+        "C": "concrete",
+        "D": "straightforward",
+        "Correct": "A",
+        "year": "113",
+        "no": "3"
+    },
+    "252": {
+        "Q": "In the major earthquake last week, a high-rise building ______ down, causing hundreds of deaths and injuries.",
+        "A": "pinned",
+        "B": "tracked",
+        "C": "settled",
+        "D": "tumbled",
+        "Correct": "D",
+        "year": "113",
+        "no": "3"
+    },
+    "253": {
+        "Q": "In spite of being betrayed, he chose to forgive his old friend instead of harboring ______ against him.",
+        "A": "sympathy",
+        "B": "affection",
+        "C": "gratitude",
+        "D": "revenge",
+        "Correct": "D",
+        "year": "113",
+        "no": "3"
+    },
+    "254": {
+        "Q": "The ______ fabric was durable but uncomfortable against the skin, making it unsuitable for clothing.",
+        "A": "coarse",
+        "B": "smooth",
+        "C": "delicate",
+        "D": "intensive",
+        "Correct": "A",
+        "year": "113",
+        "no": "3"
+    },
+    "255": {
+        "Q": "After a careful ______, the experienced doctor advised Tom to have heart surgery the next week.",
+        "A": "inspiration",
+        "B": "evaluation",
+        "C": "opposition",
+        "D": "participation",
+        "Correct": "B",
+        "year": "113",
+        "no": "3"
+    },
+    "256": {
+        "Q": "The city expanded public transit to ______ summer tourists to ease festival congestion.",
+        "A": "scramble",
+        "B": "supervise",
+        "C": "accommodate",
+        "D": "undermine",
+        "Correct": "C",
+        "year": "113",
+        "no": "3"
+    },
+    "257": {
+        "Q": "In many voters' minds, the politician's promise to cut government spending while improving public infrastructure was an apparent ______ due to the challenges of achieving both goals at the same time.",
+        "A": "conservation",
+        "B": "contradiction",
+        "C": "conclusion",
+        "D": "consensus",
+        "Correct": "B",
+        "year": "113",
+        "no": "3"
+    },
+    "258": {
+        "Q": "Upon opening the old storage container, they were greeted by the ______ smell of food that had been forgotten for months.",
+        "A": "rotten",
+        "B": "crispy",
+        "C": "divine",
+        "D": "elegant",
+        "Correct": "A",
+        "year": "113",
+        "no": "3"
+    },
+    "259": {
+        "Q": "Our history teacher played a short video in class to help us ______ the complex relations between the two countries.",
+        "A": "devise",
+        "B": "estimate",
+        "C": "grasp",
+        "D": "indicate",
+        "Correct": "C",
+        "year": "113",
+        "no": "3"
+    },
+    "260": {
+        "Q": "As a big fan of Harlan Coben, a popular writer of mystery novels and thrillers, I have ______ read every book of his and enjoyed each one greatly.",
+        "A": "largely",
+        "B": "practically",
+        "C": "scarcely",
+        "D": "fundamentally",
+        "Correct": "B",
+        "year": "113",
+        "no": "3"
+    }
+}
