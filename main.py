@@ -98,19 +98,17 @@ async def on_ready():
 
 #start (run if the file is original and not imported)
 async def main():
-    try:
-        token = info["token"]
-    except KeyError:
-        try:
-            token = os.environ["TOKEN"]
-        except KeyError:
-            print("Error: 無法在控制台或info.json取得有效token.")
-            return
-    async with bot:
-        await asyncio.gather(
-            run(),
-            bot.start(token)
-        )
+    token = info.get("token") or os.environ.get("TOKEN")
+    if not token:
+        print("Error: 無法取得有效的 Bot Token.")
+        return
+    
+    token = token.strip()
+        async with bot:
+            await asyncio.gather(
+                run(),
+                bot.start(token)
+            )
 
 if __name__ == "__main__":
     asyncio.run(main())
