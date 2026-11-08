@@ -95,20 +95,20 @@ bot = Bot()
 @bot.event
 async def on_ready():
     print(f"Bot已啟動 登入為 {bot.user} (ID: {bot.user.id})")
-
+    
 #start (run if the file is original and not imported)
 async def main():
     token = info.get("token") or os.environ.get("TOKEN")
     if not token:
         print("Error: 無法取得有效的 Bot Token.")
         return
-    
     token = token.strip()
-        async with bot:
-            await asyncio.gather(
-                run(),
-                bot.start(token)
-            )
+    applicationID = info.get("applicationID") or os.environ.get("APPLICATION_ID")
+    async with bot:
+        await asyncio.gather(
+            run(),
+            bot.start(token)
+        )
 
 if __name__ == "__main__":
     asyncio.run(main())
