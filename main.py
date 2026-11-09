@@ -38,7 +38,7 @@ class Bot(commands.Bot):
     #initial setting of the bot object
     #"self" is some of the object's default attributes.
     def __init__(self):
-        super().__init__(command_prefix="/", intents=intents, application_id=applicationID)
+        super().__init__(command_prefix="/", intents=intents, application_id=info["applicationID"])
     #below is to load cogs files if existing
     async def setup_hook(self):
         await self.load_extension("cogs.database_cogs_123xyz")
