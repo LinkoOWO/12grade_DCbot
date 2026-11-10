@@ -104,7 +104,7 @@ class Part_1(commands.Cog):
             if self.current_page == len(self.question_ids):
                 ungraded_count = len(self.question_ids) - self.graded_count
                 result_description = (
-                    f"答對 {self.score} / {self.graded_count} 題。"
+                    f"Ciallo (∠・ω )⌒☆\n答對 {self.score} / {self.graded_count} 題。"
                     if self.graded_count
                     else "本次題目沒有可計分的答案。"
                 )
