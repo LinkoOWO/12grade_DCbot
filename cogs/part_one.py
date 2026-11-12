@@ -21,7 +21,7 @@ class Part_1(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 #ai
-    @app_commands.command(name="mock_part_1", description="模考英文第一大題 共260題")
+    @app_commands.command(name="mock_part_1", description="模考英文第一大題 共320題")
     @app_commands.choices(
         mode=[
             Choice(name="照順序", value=1),
